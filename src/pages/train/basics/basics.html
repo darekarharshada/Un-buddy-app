@@ -1,0 +1,304 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Basics</h2>
+        <p id="Text">First Aid is defined as ‘the initial care or treatment to the sick or wounded’.
+
+            First aid is often provided by non-medical personnel who are first present at the Point of injury (POI).
+            This could include fellow peacekeepers or other civilians.
+
+            The role of the First-Aider includes:
+            • Sending an effective alert message
+            • Provide initial care and
+            • Provide continued care until the casualty is delivered to the next appropriate ‘level of care’.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Notions élémentaires</h2>
+        <p id="Text">Les premiers secours sont définis comme « les premiers soins ou traitements prodigués aux malades
+            ou aux blessés ».
+
+            Les premiers soins sont souvent prodigués par du personnel non médical qui est le premier présent sur le
+            lieu de l’accident (point of injury ou POI). Il peut s’agir d’autres soldats de la paix ou d’autres civils.
+
+            Le rôle des personnes prodiguant les premiers secours est le suivant :
+            • Envoyer un message d’alerte efficace
+            • Prodiguer les premiers soins
+            • Fournir des soins continus jusqu’à ce que la victime soit conduite au prochain « niveau de soins »
+            approprié.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">Lo esencial</h2>
+        <p id="Text">
+            Los primeros auxilios se define como “el cuidado o tratamiento inicial a un enfermo o herido”.
+            Los primeros auxilios son aplicados a menudo por personal no médico, quienes son las primeras personas en
+            estar presentes en el lugar del incidente. Esto puede incluir colegas en operaciones para el mantenimiento
+            de la paz u otros civiles.
+            El rol de los socorristas incluye:
+            .Enviar un mensaje de alerta efectivo.
+            .Aplicar cuidados iniciales y
+            .Suministrar cuidados continuos hasta que la víctima sea llevada al siguiente “nivel de cuidado” apropiado.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">Основы</h2>
+        <p id="Text">Первая помощь определяется как “первоначальный уход или лечение больного или травмированного лица”.
+
+            Первая помощь часто оказывается немедицинским персоналом, который первым оказывается на месте происшествия.
+            Это могут быть коллеги по миротворческим операциям или другие гражданские лица.
+            Роль спасателей включает в себя:
+            .Примените первоначальную помощь и
+            .Продолжайте оказывать помощь до тех пор, пока пострадавший не будет переведен на следующий соответствующий
+            “уровень помощи”.
+        </p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">“10-1-2 Doctrine”</h2>
+        <p id="Text">
+            It is evidence-based medicine that the risk of death or permanent disability is significantly
+            reduced if people are treated as soon as possible after the onset of a life-threatening injury or illness.
+            Based on this evidence, it is of utmost importance that appropriate life, limb and eyesight saving
+            procedures are provided within specific timelines along with the survival chain appropriate for the event.
+            This has become known as the 10-1-2 timeline. The Survival chain in line with this timeline is described as
+            follows.
+        </p>
+        <p id="SubTitle">10 minutes</p>
+        <p id="Text">
+            10 - Represents the recommended maximum time, in minutes, to provide the necessary immediate
+            lifesaving measures at POI after the onset of injury/illness. This is often referred to as the ‘Platinum 10
+            Minutes’.
+        </p>
+        <p id="SubTitle">1 hour</p>
+        <p id="Text">
+            1 - Represents the recommended maximum time that necessary damage control resuscitation procedures
+            are provided by emergency medical personnel. This should be completed within 1 hour of the onset of
+            injury/illness and is often referred to as the ‘Golden Hour’.
+        </p>
+        <p id="SubTitle">2 hours</p>
+        <p id="Text">
+            2 - Represents the recommended maximum time that necessary Damage Control Surgery (DCS) is
+            provided. This should start within 2 hours of the onset of injury/illness.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">La « Doctrine 10-1-2 » pour les soins de traumatologie</h2>
+        <p id="Text">Il est médicalement prouvé que le risque de décès ou d’invalidité permanente se voit
+            considérablement réduit si les gens sont traités le plus tôt possible après l’apparition d’une blessure ou
+            d’une maladie mettant leur vie en danger. Sur la base de ces preuves, il est de la plus haute importance que
+            des procédures appropriées de protection de la vie, des membres et de la vue soient fournies dans des délais
+            spécifiques et tout en respectant la chaîne de survie appropriée pour l’événement. C’est ce que l’on appelle
+            la chronologie 10-1-2. La chaîne de survie conforme à cette chronologie est décrite comme suit :</p>
+        <p id="SubTitle">10 minutes</p>
+        <p id="Text">10 - Représente le temps maximum recommandé, en minutes, pour fournir les mesures de sauvetage
+            immédiates nécessaires sur le POI après l'apparition d'une blessure ou d'une maladie. C’est ce que l’on
+            appelle souvent les « 10 minutes de platine ». </p>
+        <p id="SubTitle">1 heure</p>
+        <p id="Text">1 - Représente la durée maximale recommandée pour que le personnel médical d’urgence fournisse les
+            procédures de réanimation nécessaires pour contrôler les dommages. Ceci doit être fait dans l’heure qui suit
+            l’apparition de la blessure ou de la maladie et est souvent appelé « l’heure d’or ».</p>
+        <p id="SubTitle">2 heures</p>
+        <p id="Text">2 - Représente la durée maximale recommandée pendant laquelle la chirurgie de contrôle des dommages
+            (damage control surgery ou DCS) nécessaire est fournie. Celle-ci doit commencer dans les 2 heures suivant
+            l'apparition de la blessure ou de la maladie.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">“PRINCIPIO DEL 10-1-2”</h2>
+        <p id="Text">
+            Hay evidencia médica de que el riesgo de muerte o invalidez permanente se puede reducir de manera
+            significativa si las personas son tratadas tan pronto como sea posible luego de la lesión o la enfermedad
+            potencialmente mortal. Basado en esta evidencia, es de máxima importancia que los procedimientos apropiados
+            para salvar la vida, extremidades o la vista sean aplicados dentro de líneas específicas de tiempo junto con
+            la cadena de supervivencia apropiada para el incidente. Esto se conoce como la línea de tiempo 10-1-2. A
+            continuación, se describe la aplicación de la cadena de supervivencia dentro de la línea de tiempo.
+        </p>
+        <p id="SubTitle">10 MINUTOS</p>
+        <p id="Text">
+            10: representa el tiempo máximo recomendado, en minutos, para aplicar las medidas inmediatas necesarias para
+            salvar la vida en el lugar del incidente, luego del Comienzo de una enfermedad o herida o de la enfermedad.
+            A menudo, se conoce como “los 10 minutos de platino”.
+        </p>
+        <p id="SubTitle">1 HORA</p>
+        <p id="Text">
+            1: representa el tiempo máximo recomendado para que el personal médico de emergencias pueda aplicar los
+            procedimientos de reanimación necesarios para el control de daños. Esto se debe hacer dentro de la primera
+            hora luego del Comienzo de una enfermedad o herida o de la enfermedad, usualmente se le conoce como “la hora
+            dorada”.
+        </p>
+        <p id="SubTitle">2 HORAS</p>
+        <p id="Text">
+            2: representa el tiempo máximo recomendado para aplicar cirugía de control de daños (CCD) necesaria. Ésta
+            debe empezar dentro de las 2 horas posteriores al inicio de la herida o de la enfermedad.
+        </p>
+    </ion-card>
+
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">“ДОКТРИНА 10-1-2”</h2>
+        <p id="Text">
+            Существуют медицинские доказательства того, что риск смерти или постоянной нетрудоспособности может быть
+            значительно снижен, если людей лечить как можно скорее после начала потенциально опасного для жизни
+            заболевания. Основываясь на этих доказательствах, крайне важно, чтобы соответствующие процедуры по спасению
+            жизни, конечностей или зрения применялись в определенные сроки наряду с соответствующей цепочкой выживания в
+            случае инцидента. Это известно как временная шкала 10-1-2. Ниже описывается применение цепочки выживания в
+            рамках временной шкалы.
+        </p>
+        <p id="SubTitle">10 МИНУТ</p>
+        <p id="Text">
+            10 – Представляет собой максимальное рекомендуемое время в минутах для принятия немедленных мер, необходимых
+            для спасения жизни на месте происшествия, после наступления травмы или заболевания. Это часто называют
+            “Платиновыми 10 минутами”.
+        </p>
+        <p id="SubTitle">1 ЧАС</p>
+        <p id="Text">
+            1 – Максимальное рекомендуемое время, необходимое персоналу скорой медицинской помощи для проведения
+            реанимационных процедур, необходимых для устранения повреждений. Это должно быть сделано в течение первого
+            часа после начала травмы или заболевания, обычно известного как “Золотой час”.
+        </p>
+        <p id="SubTitle">2 ЧАСА</p>
+        <p id="Text">
+            2 – Максимальное рекомендуемое время для проведения необходимой операции по контролю повреждений. Это должно
+            начинаться в течение 2 часов после возникновения травмы или заболевания.
+        </p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Tactical medicine </h2>
+        <p id="Text">
+            First-aid and pre-hospital medical guidelines have long been developed by the civilian medical
+            systems of the country and rely on the assumption that the First Aider and responders are able to provide
+            care without putting their own lives at risk.
+
+            In recent years, the role of military medicine has been further defined to address circumstances where the
+            treatment of the casualty must be weighed against other considerations including Mission goals and ongoing
+            hostility
+
+            Additionally, the operational context of military medicine means that some treatments and interventions that
+            may be appropriate in the civilian setting could lead to additional loss of life and increased risk in a
+            military setting. With this in mind, the following three phases of care have been widely recognized to apply
+            in the tactical setting.</p>
+        <p id="SubTitle">Care Under Fire</p>
+        <p id="Text">
+            Care Under Fire relates to medical treatment provided while actively engaged in a hostile
+            environment. Treatments will often be limited to application of tourniquets, and self-aid at this point due
+            to the overwhelming priority of Engaging and Suppressing the Threat, which should include the casualty if
+            possible.
+        </p>
+        <p id="SubTitle">Tactical Field Care</p>
+        <p id="Text">Tactical Field Care is delivered when the casualty and responders are no longer under direct fire,
+            though the environment around them may still be hostile or their situation may become hostile again. It will
+            often be carried out by the First Aider or Medic, using equipment that was being carried at the time
+            including airway adjuncts, chest decompression and fluid resuscitation.</p>
+        <p id="SubTitle">Evacuation Care</p>
+        <p id="Text">Evacuation Care occurs when evacuation assets arrive with additional medical supplies and/or the
+            casualty is removed from the hostile environment. This may include access to more advanced emergency medical
+            professionals and equipment.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Médecine tactique</h2>
+        <p id="Text">Les directives médicales en matière de premiers soins et de soins pré-hospitaliers ont longtemps
+            été élaborées par les systèmes médicaux civils du pays et reposent sur l'hypothèse que le secouriste et les
+            intervenants sont capables de fournir des soins sans mettre leur propre vie en danger.
+
+            Ces dernières années, le rôle de la médecine militaire a été mieux défini pour tenir compte des
+            circonstances dans lesquelles le traitement de la victime doit être mis en balance avec d'autres
+            considérations, notamment les objectifs de la mission et l'hostilité persistante.
+
+            De plus, le contexte opérationnel de la médecine militaire signifie que certains traitements et
+            interventions qui peuvent être appropriés dans le contexte civil pourraient entraîner des pertes de vie
+            additionnelles et des risques accrus dans un contexte militaire. Dans cette optique, les trois phases de
+            soins suivantes ont été largement reconnues comme s'appliquant dans le contexte tactique :</p>
+        <p id="SubTitle">Soins sous le feu de l'ennemi</p>
+        <p id="Text">Les soins sous le feu de l'ennemi concernent les traitements médicaux dispensés dans un
+            environnement hostile. Les traitements se limiteront souvent à l’application de garrots et à
+            l’auto-assistance à ce stade, en raison de la priorité absolue de l’engagement et de la suppression de la
+            menace, qui devrait si possible inclure la victime.</p>
+        <p id="SubTitle">Soins tactiques sur le terrain</p>
+        <p id="Text">Les soins tactiques sur le terrain sont dispensés lorsque la victime et les intervenants ne sont
+            plus sous le feu direct, bien que l'environnement qui les entoure puisse encore être hostile ou que leur
+            situation puisse redevenir hostile. Ils seront souvent effectués par la personne prodiguant les premiers
+            soins ou par le médecin, à l’aide de l’équipement disponible à ce moment-là, y compris accessoires pour les
+            voies respiratoires, décompression thoracique et réanimation liquidienne.</p>
+        <p id="SubTitle">Soins d’évacuation</p>
+        <p id="Text">On parle de soins d’évacuation lorsque les moyens d'évacuation arrivent avec des fournitures
+            médicales supplémentaires et/ou lorsque la victime est retirée de l'environnement hostile. Cela peut inclure
+            l'accès à des professionnels et à de l'équipement médicaux d'urgence plus avancés.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">MEDICINA TÁCTICA</h2>
+        <p id="Text">
+            Los primeros auxilios y las guías médics prehospitalarias han sido desarrollados durante mucho tiempo por
+            los sistemas médicos civiles del país y asumen que los socorristas están en la capacidad de aplicar cuidados
+            sin poner sus vidas en riesgo.
+
+            En años recientes, el rol de la medicina militar ha sido definido con más detalle para abordar
+            circunstancias donde el tratamiento de la víctima debe evaluarse junto con otras consideraciones, incluyendo
+            los objetivos de la misión y el ambiente hostil.
+
+            Además, el contexto operacional de la medicina militar significa que algunos tratamientos e intervenciones
+            que pueden ser apropiados en el entorno civil, podrían conducir a una mayor pérdida de vidas e incrementar
+            el riesgo en un entorno militar. Con esto en mente, las tres fases de cuidados que se presentan a
+            continuación han sido ampliamente reconocidas para ser aplicadas en un ambiente táctico.
+        </p>
+        <p id="SubTitle">Cuidado bajo fuego</p>
+        <p id="Text">
+            La atención bajo fuego se relaciona con el tratamiento médico aplicado mientras se está en un ambiente
+            hostil. La atención a menudo se limitará a la aplicación de torniquetes y autotratamientos, en este punto,
+            debido a la prioridad de combatir y suprimir la amenaza, la cual debe incluir a la víctima, si es posible.
+        </p>
+        <p id="SubTitle">Atención Táctica en el Terreno </p>
+        <p id="Text">
+            La atención táctica en el terreno es aplicada cuando la víctima y el socorrista ya no se encuentran bajo
+            fuego directo, aunque el ambiente a su alrededor sea hostil o su situación vuelva a ser adversa. A menudo,
+            es aplicado por socorristas o médicos, usando el equipo con el que se cuente en ese momento, incluyendo
+            complementos para las vías respiratorias, descompresión del pecho y canalización.
+        </p>
+        <p id="SubTitle">Atención de evacuación</p>
+        <p id="Text">
+            Los Cuidados durante la evacuación ocurren cuando llega el personal de evacuación con implementos médicos
+            adicionales o la víctima es retirada del área hostil. Esto puede incluir acceso a médicos profesionales y
+            equipo médico de emergencia más avanzado.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ТАКТИЧЕСКАЯ МЕДИЦИНА</h2>
+        <p id="Text">
+            Гражданские медицинские системы страны давно разработали рекомендации по оказанию первой помощи и оказанию
+            доврачебной помощи, которые предполагают, что лица, оказывающие первую помощь, способны оказывать помощь, не
+            подвергая свою жизнь риску.
+            В последние годы роль военной медицины была дополнительно определена для решения обстоятельств, при которых
+            лечение жертв должно оцениваться наряду с другими соображениями, включая цели миссии и враждебную
+            обстановку.
+            Кроме того, оперативный контекст военной медицины означает, что некоторые методы лечения и вмешательства,
+            которые могут быть уместны в гражданских условиях, могут привести к большей гибели людей и увеличить риск в
+            военных условиях. Имея это в виду, три этапа ухода, представленные ниже, получили широкое признание для
+            применения в тактических условиях.</p>
+        <p id="SubTitle">ВНИМАНИЕ ПОД ОГНЕМ</p>
+        <p id="Text">
+            Помощь под огнем относится к медицинскому лечению, применяемому во время пребывания во враждебной среде.
+            Помощь часто ограничивается наложением жгутов и самолечением, на данном этапе из-за приоритета борьбы с
+            угрозой и ее подавления, по возможности, должна включать оказание помощи пострадавшему.
+        </p>
+        <p id="SubTitle">ТАКТИЧЕСКАЯ ПОМОЩЬ В ПОЛЕВЫХ УСЛОВИЯХ</p>
+        <p id="Text">Тактическое внимание на земле применяется, когда пострадавший и его спасатель больше не находятся
+            под прямым огнем, даже если окружающая среда вокруг них враждебна или их положение снова становится
+            неблагоприятным. Его часто применяют сотрудники служб экстренного реагирования или врачи, используя любое
+            доступное в данный момент оборудование, включая вспомогательные средства для дыхательных путей, декомпрессию
+            грудной клетки и установку катетеров.</p>
+        <p id="SubTitle">ПОМОЩЬ ПРИ ЭВАКУАЦИИ.</p>
+        <p id="Text">Эвакуационная помощь оказывается, когда прибывает эвакуационный персонал с дополнительными
+            медикаментами и / или пострадавший удаляется из опасной зоны. Это может включать доступ к профессиональным
+            врачам и более современному оборудованию неотложной медицинской помощи.
+        </p>
+    </ion-card>
+</ion-content>

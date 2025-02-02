@@ -1,0 +1,173 @@
+page-settings {
+  ion-content {
+    background: linear-gradient(
+        0deg,
+        rgba(56, 93, 138, 0.8),
+        rgba(56, 93, 138, 0.2) 60%
+      ),
+      linear-gradient(
+        270deg,
+        rgba(150, 179, 196, 0.8),
+        rgba(150, 179, 196, 0.3) 80%
+      ),
+      linear-gradient(
+        120deg,
+        rgba(150, 224, 235, 0.9),
+        rgba(150, 224, 235, 0) 80%
+      );
+  }
+
+  ion-toggle {
+    padding: 12px;
+    --handle-width: 25px;
+    --handle-height: 27px;
+    --handle-max-height: auto;
+    --handle-spacing: 6px;
+    contain: none;
+  }
+
+  ion-toggle::part(track),
+  ion-toggle.toggle-checked::part(track) {
+    height: 10px;
+    width: 65px;
+    background: #ddd; /* Default track color */
+    overflow: visible; /* Required for iOS handle to overflow the height of the track */
+  }
+
+  ion-toggle::part(handle) {
+    background: #eb7769; /* Default (unchecked) handle color */
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  ion-toggle.toggle-checked::part(handle) {
+    background: #95c34e; /* Checked (green) handle color */
+  }
+
+  ion-toggle::part(track) {
+    background: #ddd; /* Default track color */
+  }
+
+  ion-toggle.toggle-checked::part(track) {
+    background: #95c34e; /* Green track when checked */
+  }
+
+  /* Additional customizations */
+  ::part(handle) {
+    background: red; /* Default color (unchecked state) */
+  }
+
+  ion-toggle.toggle-checked::part(handle) {
+    background: green; /* Checked color */
+  }
+
+  .back-button-icon-md,
+  .back-button-icon-ios {
+    color: white;
+  }
+
+  .share-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 3px 10px 35px 10px;
+  }
+
+  .share-button {
+    flex: 1 1 48%; // Two buttons per row
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3880ff;
+    border: none;
+    border-radius: 8px; // Rounded corners
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .share-button:hover {
+    background-color: #4c8dff;
+  }
+
+  ion-icon {
+    //font-size: 2em; //Preferred size here
+  }
+
+  p {
+    color: rgb(88, 88, 88);
+  }
+
+  .card {
+    border-radius: 30px;
+  }
+
+  ::ng-deep ion-toggle {
+    --handle-background: red; /* Default (unchecked) color */
+    --background: red;
+  }
+
+  ::ng-deep ion-toggle.toggle-checked {
+    --handle-background: green; /* Checked color */
+    --background: green;
+  }
+
+  .swiper-slide {
+    overflow-y: scroll;
+    display: block;
+  }
+
+  ion-slides {
+    height: auto;
+  }
+
+  div.swiper-pagination {
+    top: 80px;
+    bottom: inherit;
+  }
+
+  #Title {
+    padding: 0px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "BebasRegular";
+    color: rgba(56, 93, 138, 1);
+    white-space: pre-wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  #SubTitle {
+    padding: 0px;
+    font-size: 1.5em;
+    font-family: "BebasLight";
+    color: rgba(56, 93, 138, 1);
+    white-space: pre-wrap;
+  }
+
+  #Text {
+    font-size: 1em;
+    font-family: "OpenSansRegular";
+    color: rgb(88, 88, 88);
+  }
+
+  #LabelText {
+    //color: rgb(114, 114, 114);
+    color: rgb(56, 93, 138);
+    font-family: "BebasRegular";
+    font-size: 1.5em;
+    margin-top: 17px;
+    padding: 0px;
+    margin-left: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: rgba(56, 93, 138, 1);
+    opacity: 1;
+  }
+
+  #Image1 {
+    //width: 250px;
+    //height: 250px;
+  }
+}

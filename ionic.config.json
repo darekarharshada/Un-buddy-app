@@ -1,0 +1,7 @@
+{
+  "name": "FirstAid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,45 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Sit up & forward position</h2>
+        <p id="Text">Casualties that are conscious and experiencing breathing difficulty should be permitted to adopt
+            the ‘sit up & forward position’.<br><br>Particularly those with severe facial trauma may be able to best
+            maintain their airway by leaning forward and allowing blood, tissue, and fluid to naturally drain free.</p>
+        <img id="Image" src="./assets/imgs/airway/sittingposition.gif">
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Position assise penchée en avant</h2>
+        <p id="Text">Les blessés conscients qui éprouvent des difficultés respiratoires devraient être autorisés à
+            adopter la « position assise penchée vers l’avant ». <br><br>En particulier, ceux qui ont un traumatisme
+            facial grave pourront être mieux en mesure de maintenir leurs voies respiratoires en se penchant vers
+            l’avant et en laissant le sang, les tissus et les liquides se dégager naturellement.</p>
+        <img id="Image" src="./assets/imgs/airway/sittingposition.gif">
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">POSICIÓN SENTADA HACIA ADELANTE</h2>
+        <p id="Text">
+            Se puede adoptar una posición sentada hacia adelante a los heridos que estén conscientes que sientan
+            dificultad para respirar.
+            Particularmente aquellos con traumas faciales severos puedan mantener mejor sus vías respiratorias
+            inclinándose hacia adelante y permitiendo que la sangre, los tejidos y el líquido se drenen naturalmente.
+        </p>
+        <img id="Image" src="./assets/imgs/airway/sittingposition.gif">
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ПОЛОЖЕНИЕ СИДЯ ВПЕРЕД</h2>
+        <p id="Text">Находящимся в сознании пострадавшим, которые чувствуют затрудненное дыхание, разрешается принять
+            положение сидя вперед.
+            Особенно те, у кого тяжелая травма лица, могут лучше поддерживать свои дыхательные пути, наклоняясь вперед и
+            позволяя крови, тканям и жидкости стекать естественным путем.</p>
+        <img id="Image" src="./assets/imgs/airway/sittingposition.gif">
+    </ion-card>
+</ion-content>

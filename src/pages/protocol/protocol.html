@@ -1,0 +1,87 @@
+<ion-header no-border>
+  <ion-navbar>
+
+  </ion-navbar>
+</ion-header>
+
+  <ion-content no-padding no-bounce>
+  <ion-grid>
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col></ion-col>
+    <ion-col>
+        <button *ngIf="InformationButton === true && ENG === true" ion-button class="button" outline  (click)="OpenInfo()">INFO</button> 
+        <button *ngIf="InformationButton === true && FR === true" ion-button class="button" outline  (click)="OpenInfo()">INFO</button>
+        <button style="font-size: 20px;" *ngIf="InformationButton === true && ES === true" ion-button class="button" outline  (click)="OpenInfo()">INFORMACIÓN</button> 
+        <button style="font-size: 20px;" *ngIf="InformationButton === true && RUS === true" ion-button class="button" outline  (click)="OpenInfo()">ИНФОРМАЦИЯ</button>
+       
+        <div *ngIf="InformationButton === false" class="placeholderhidden"></div>      
+    </ion-col>
+    <ion-col></ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <ion-row no-padding>
+      <div id="InstructionText">{{ InstructionText }}</div>
+  </ion-row>
+  
+  <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <button *ngIf="YesButton === true && ENG === true" ion-button class="button" outline  (click)="YesClick()">YES</button>
+        <button *ngIf="YesButton === true && FR === true" ion-button class="button" outline  (click)="YesClick()">Oui</button>
+        <button *ngIf="YesButton === true && ES === true" ion-button class="button" outline  (click)="YesClick()">SÍ</button>
+        <button *ngIf="YesButton === true && RUS === true" ion-button class="button" outline  (click)="YesClick()">ДА</button>
+      </ion-col>
+      <ion-col>
+        <button *ngIf="CheckButton === true && ios === true" ion-button class="button" outline  (click)="CheckClick()">
+          <ion-icon id="Checkmark" name='checkmark'></ion-icon>          
+        </button>
+        <button *ngIf="CheckButton === true && android === true" ion-button class="button" outline  (click)="CheckClick()">
+          <ion-icon id="CheckmarkAndroid" name='checkmark'></ion-icon>    
+        </button>
+      </ion-col>
+      <ion-col>
+        <button *ngIf="NoButton === true && ENG === true" ion-button class="button" outline  (click)="NoClick()">NO</button>
+        <button *ngIf="NoButton === true && FR === true" ion-button class="button" outline  (click)="NoClick()">Non</button>
+        <button *ngIf="NoButton === true && ES === true" ion-button class="button" outline  (click)="NoClick()">VOLVER</button>
+        <button *ngIf="NoButton === true && RUS === true" ion-button class="button" outline  (click)="NoClick()">НЕТ</button>
+      </ion-col>
+      <ion-col></ion-col>
+  </ion-row>
+
+  <ion-row>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+          <button ion-button class="button" *ngIf="ENG === true" outline  (click)="BackClick()">BACK</button>
+          <button ion-button class="button" *ngIf="FR === true" outline  (click)="BackClick()">Retour</button>
+          <button ion-button class="button" *ngIf="ES === true" outline  (click)="BackClick()">ATRÁS</button>
+          <button ion-button class="button" *ngIf="RUS === true" outline  (click)="BackClick()">НАЗАД</button>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+  </ion-row>
+
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-segment id="segments" [(ngModel)]="MARCH">
+    <ion-segment-button value="M" (ionSelect)="SelectM()">
+      M
+    </ion-segment-button>
+    <ion-segment-button value="A" (ionSelect)="SelectA()">
+      A
+    </ion-segment-button>
+    <ion-segment-button value="R" (ionSelect)="SelectR()">
+      R
+    </ion-segment-button>
+    <ion-segment-button value="C" (ionSelect)="SelectC()">
+      C
+    </ion-segment-button>
+    <ion-segment-button value="H" (ionSelect)="SelectH()">
+      H
+    </ion-segment-button>
+</ion-segment>
+</ion-footer>

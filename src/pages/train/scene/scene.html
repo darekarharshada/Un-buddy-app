@@ -1,0 +1,289 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">S.C.E.N.E</h2>
+        <p id="Text">The general S.C.E.N.E Assessment is the first evaluation you will make as a first-aider upon
+            arriving at or witnessing an injury.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">S.C.E.N.E</h2>
+        <p id="Text">L'évaluation générale S.C.E.N.E est la première évaluation que vous ferez à votre arrivée en tant
+            que secouriste ou en tant que témoin d'une blessure.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">S.C.A.N.R</h2>
+        <p id="Text">
+            La evaluación general S.C.A.N.R. es la evaluación primaria que realiza el socorrista al llegar al lugar de
+            un accidente o presenciar una lesión.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">Б.П.А.К.Р.</h2>
+        <p id="Text">Общее Б.П.А.К.Р. Это первичная оценка, выполняемая лицом, оказывающим первую помощь, по прибытии на
+            место происшествия или ставшим свидетелем травмы.</p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Safe</h2>
+        <p id="Text">In your assessment of the scene you need to identify hazards and control them before turning your
+            attention to the treatment of the casualty.
+            <br>When potential threats are reduced, and it is safe to treat the casualty, take appropriate precautions
+            to treat the casualty by using the following personal protective equipment (PPE):
+            • Gloves
+            • Eye protection
+        </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Sécurité</h2>
+        <p id="Text">Dans votre évaluation de la scène, vous devez identifier les dangers et les maîtriser avant de vous
+            concentrer sur le traitement de la victime.
+            <br>Lorsque les menaces potentielles sont réduites et que vous pouvez traiter la victime en sécurité, prenez
+            les précautions appropriées en utilisant l'équipement de protection individuelle (EPI) suivant :
+            • Gants
+            • Protection des yeux
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">SEGURIDAD</h2>
+        <p id="Text">
+            Al evaluar la escena, usted debe identificar los peligros y controlarlos antes de enfocar su atención en
+            socorrer a la víctima.
+
+            <br>
+            Cuando sean reducidas las amenazas potenciales y sea seguro socorrer a la víctima, tome las precauciones
+            apropiadas haciendo uso del siguiente equipo de protección personal (EPP):
+            .Guantes
+            .Protección ocular
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">БЕЗОПАСНОСТЬ</h2>
+        <p id="Text">Оценивая место происшествия, вы должны определить опасности и контролировать их, прежде чем
+            сосредоточить свое внимание на оказании помощи пострадавшему.
+            Когда потенциальная угроза уменьшится и спасение пострадавшего станет безопасным, примите соответствующие
+            меры предосторожности, используя следующие средства индивидуальной защиты (СИЗ):
+            .Перчатки
+            .Защитные очки
+        </p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Cause</h2>
+        <p id="Text">Look at the scene around the casualty for clues to what happened and what caused the casualty’s
+            injuries. There are traumatic injuries (external) and medical injuries (internal):
+            <br>Examples of traumatic injury (external):
+            • Road traffic accidents
+            • Gunshots
+            • Explosions
+            • Drowning
+            • Snakebites
+            <br>Examples of medical injury (internal):
+            • Seizures
+            • Respiratory disorders
+            • Heart disorders
+            • Heat disorders
+        </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Cause</h2>
+        <p id="Text">Examinez la scène autour de la victime pour trouver des indices sur ce qui s'est passé et ce qui a
+            causé les blessures de la victime. Il y a des blessures traumatiques (externes) et des blessures médicales
+            (internes) :
+            <br>Exemples de blessures traumatiques (externes) :
+            • Accidents de la route
+            • Fusillade
+            • Explosions
+            • Noyade
+            • Morsures de serpent
+            <br>Exemples de blessures médicales (internes) :
+            • Convulsions
+            • Troubles respiratoires
+            • Troubles cardiaques
+            • Troubles de la chaleur
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">CAUSA</h2>
+        <p id="Text">
+            Estudie la escena alrededor de la víctima para encontrar pistas sobre lo sucedido y lo que sea que haya
+            podido causarle las lesiones. Existen lesiones traumáticas (externas) y lesiones médicas (internas):
+            <br>Ejemplos de lesiones traumáticas (externas):
+            .Accidentes de tránsito
+            .Disparos
+            .Explosiones
+            .Ahogamiento
+            .Mordeduras de serpiente
+            <br>Ejemplos de condiciones médicas (internas):
+            .Convulsiones
+            .Padecimientos respiratorias
+            .Padecimientos cardíacos
+            .Trastornos producidos por el calor
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ПРИЧИНА</h2>
+        <p id="Text">Изучите место происшествия вокруг жертвы, чтобы найти подсказки о том, что произошло и что могло
+            стать причиной травм жертвы. Существуют травматические повреждения (внешние) и медицинские (внутренние):
+            .Дорожно-транспортные происшествия
+            .Выстрелы
+            .Взрывы
+            .Утопление
+            .Укусы змей
+            <br>Примеры заболеваний (внутренние):
+            .Судороги
+            .Респираторные заболевания
+            .Заболевания сердца
+            .Тепловые расстройства
+        </p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Environment</h2>
+        <p id="Text">
+            Are there environmental factors impacting on the victim? Environmental factors may include:
+            • Standing water or wet casualties
+            • Extreme heat or cold or direct exposure
+            • Electrical cables or fallen power lines
+            • Oncoming traffic
+            • Fire or flammable liquid and vapors
+        </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Environnement</h2>
+        <p id="Text">Y a-t-il des facteurs environnementaux qui ont un impact sur la victime ? Les facteurs
+            environnementaux peuvent inclure:
+            • Eau stagnante ou blessures mouillées
+            • Chaleur ou froid extrême ou exposition directe
+            • Câbles électriques ou lignes électriques tombées
+            • Trafic
+            • Liquides et vapeurs inflammables ou un feu
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">AMBIENTE</h2>
+        <p id="Text">
+            ¿Hay algún factor ambiental que afecte a la víctima? Los factores medioambientales pueden incluir:
+            .Agua estancada o víctimas expuestas al agua
+            .Frío o calor extremos o bajo exposición directa
+            .Cables eléctricos o líneas eléctricas caídas
+            .vehículos que se aproximen a su posición.
+            .Fuego o líquidos y vapores inflamables.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">АТМОСФЕРА</h2>
+        <p id="Text">
+            Существуют ли какие-либо факторы окружающей среды, влияющие на жертву? К факторам окружающей среды могут
+            относиться:
+            .Застойная вода или жертвы, подвергшиеся воздействию воды
+            .Сильный холод или жара или прямое воздействие температуры
+            .Оборванные силовые кабели или линии электропередачи
+            .Транспортные средства, приближающиеся к вашей позиции.
+            .Пожар или легковоспламеняющиеся жидкости и пары.
+        </p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Number of casualties</h2>
+        <p id="Text">In circumstances where the number of casualties outweighs the number of responders and resources,
+            decisions must be made to prioritize casualties to ensure the best is done for the most victims.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Nombre de victimes</h2>
+        <p id="Text">Dans les cas où le nombre de victimes l'emporte sur le nombre d'intervenants et de ressources, des
+            décisions doivent être prises pour établir l'ordre de priorité des victimes afin de s'assurer que la plupart
+            des victimes seront traitées au mieux.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">NÚMERO DE VÍCTIMAS</h2>
+        <p id="Text">
+            En circunstancias donde al número de víctimas supera el número de socorristas y de recursos disponibles, se
+            deben tomar decisiones para priorizar las víctimas y garantizar que se hace lo mejor para la mayoría de
+            ellos.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">КОЛИЧЕСТВО ПОСТРАДАВШИХ</h2>
+        <p id="Text">В обстоятельствах, когда число жертв превышает количество служб экстренного реагирования и
+            имеющихся ресурсов, необходимо принимать решения о приоритизации жертв и обеспечении того, чтобы для
+            большинства из них было сделано все возможное.</p>
+    </ion-card>
+
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Extra resources</h2>
+        <p id="Text">Incidents may require additional resources to be delivered to the scene to aid in the treatment and
+            evacuation of victims.As a first-aider, you are uniquely positioned to identify these needs early, having a
+            direct impact on the time taken to deliver these resources to the incident scene.Additional resources may
+            include:
+            • Medical personnel
+            • Specialist equipment
+            • Fire suppression assets
+            • Quick reaction force
+            • Fire support
+            • Electricity or utility stabilization services
+            • Helicopters or air evacuation assets
+        </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Ressources supplémentaires</h2>
+        <p id="Text">Les incidents peuvent nécessiter l’apport de ressources supplémentaires sur les lieux pour aider au
+            traitement et à l'évacuation des victimes. En tant que secouriste, vous êtes particulièrement bien placé
+            pour identifier rapidement ces besoins, ce qui a un impact direct sur le temps nécessaire pour livrer ces
+            ressources sur les lieux de l'incident. Les ressources additionnelles peuvent comprendre:
+            • Personnel médical
+            • Matériel spécialisé
+            • Moyens d'extinction d'incendie
+            • Force de réaction rapide
+            • Pompiers
+            • Services de stabilisation de l'électricité ou des services publics
+            • Hélicoptères ou moyens d'évacuation aérienne
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">RECURSOS ADICIONALES</h2>
+        <p id="Text">
+            En algunos incidentes, puede ser necesario enviar recursos adicionales al lugar del suceso para ayudar en el
+            tratamiento y evacuación de las víctimas. Como socorrista, usted puede identificar rápidamente estas
+            necesidades, lo que tendrá un impacto directo en el tiempo que lleva proveer estos recursos en el lugar del
+            incidente y en el tiempo que tome llevar estos recursos al área del incidente. Los recursos adicionales
+            pueden incluir:
+
+            .Personal médico
+            .Equipo especializado
+            .Materiales para sofocar incendios.
+            .Unidad de reacción inmediata.
+            .Apoyo contra incendios
+            .Medios para el restablecimiento de servicios básicos
+            .Helicópteros o medios de evacuación aérea.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ДОПОЛНИТЕЛЬНЫЕ РЕСУРСЫ</h2>
+        <p id="Text">В некоторых случаях может потребоваться отправка дополнительных ресурсов на место происшествия для
+            оказания помощи в лечении и эвакуации пострадавших. Как специалист по оказанию первой помощи, вы можете
+            быстро определить эти потребности, что окажет прямое влияние на время, необходимое для доставки этих
+            ресурсов на место происшествия, и окажет прямое влияние на время, необходимое для доставки этих ресурсов в
+            район происшествия.
+            Дополнительные ресурсы могут включать:
+            • Медицинский персонал
+            • Специализированную бригаду
+            • Материалы для тушения пожаров.
+            • Группу быстрого реагирования.
+            • Огневую поддержку.
+            • Средства для восстановления основных служб.
+            • Вертолеты или средства воздушной эвакуации.
+        </p>
+    </ion-card>
+
+</ion-content>

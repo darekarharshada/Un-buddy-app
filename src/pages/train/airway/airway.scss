@@ -1,0 +1,26 @@
+page-airway {
+    ion-content {
+        background: 
+        linear-gradient(0deg, rgba(56, 93, 138, 0.1),  rgba(56, 93, 138, 0.0) 60%),
+        linear-gradient(270deg, rgba(150,179,196,0.1), rgba(150,179,196,0.0) 80%),
+        linear-gradient(120deg, rgba(150,224,235,0.2), rgba(150,224,235,0) 80%);
+    }
+
+    .back-button-icon-md, .back-button-icon-ios {
+        color: rgba(56, 93, 138, 1);
+      }
+
+    //Buttons
+    .buttons{
+        height: 60px;
+        color: rgba(56, 93, 138, 1);
+        font-size: 2em;
+        font-family: "BebasRegular";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        //margin-top: 5%;
+
+    }
+}

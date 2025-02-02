@@ -1,0 +1,167 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Recovery position</h2>
+        <p id="Text">The recovery position allows for an unconscious casualty to maintain their own airway by allowing
+            the tongue to stay forward of the airway and to drain any aspirated fluid. The Recovery Position is best
+            used for unconscious medical casualties and trauma casualties without spinal injury.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Position de récupération</h2>
+        <p id="Text">La position latérale de sécurité permet à la victime inconsciente de préserver ses propres voies
+            respiratoires en permettant à la langue de rester en avant des voies respiratoires et de drainer tout
+            liquide aspiré. La position de récupération est la meilleure pour les victimes médicales inconscientes et
+            les victimes de traumatismes sans lésion de la colonne vertébrale.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">POSICIÓN DE RECUPERACIÓN</h2>
+        <p id="Text">
+            La posición de recuperación permite a un herido inconsciente mantener sus vías respiratorias libres,
+            posicionando a la lengua mantenerse delante de las vías respiratorias y drenar cualquier fluido aspirado. La
+            posición de recuperación es mejor utilizada en heridos medicamente inconscientes y heridos por traumatismo
+            sin lesión espinal.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ПОЛОЖЕНИЕ ДЛЯ ВОССТАНОВЛЕНИЯ</h2>
+        <p id="Text">Положение для восстановления позволяет пострадавшему, находящемуся без сознания, очистить
+            дыхательные пути, располагая язык таким образом, чтобы он оставался перед дыхательными путями и отводил всю
+            всасываемую жидкость. Положение для восстановления лучше всего использовать при потере сознания с
+            медицинской точки зрения и травмах без повреждения позвоночника.</p>
+    </ion-card>
+
+    <ion-slides pager='true' *ngIf="ENG === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Performing recovery position</h2>
+                <h2 id="SubTitle">Step 1</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep1.gif">
+                <p id="Text">With the person lying on their back, kneel on the floor at their side. Extend the arm
+                    nearest you at a right angle to their body with their palm facing up.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Performing recovery position</h2>
+                <h2 id="SubTitle">Step 2</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep2.gif">
+                <p id="Text">Take the other arm and fold it so the back of their hand rests on the cheek closest to you,
+                    and hold it in place. Use your free hand to bend the person's knee farthest from you to a right
+                    angle. Roll the person onto their side by pulling on the bent knee.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Performing recovery position</h2>
+                <h2 id="SubTitle">Step 3</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep3.gif">
+                <p id="Text">Open their airway by gently tilting their head back and lifting their chin, and check that
+                    nothing is blocking their airway.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="FR === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Exécution de la position latérale de sécurité</h2>
+                <h2 id="SubTitle">Étape 1</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep1.gif">
+                <p id="Text">Avec la personne allongée sur le dos, agenouillez-vous sur le sol à côté d’elle. Tendez le
+                    bras le plus près de vous à angle droit par rapport au corps, la paume vers le haut.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Exécution de la position latérale de sécurité</h2>
+                <h2 id="SubTitle">Étape 2</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep2.gif">
+                <p id="Text">Prenez l’autre bras et pliez-le de façon à ce que le dos de la main repose sur la joue la
+                    plus proche de vous, et maintenez-le en place. Utilisez votre main libre pour plier le genou externe
+                    de la personne à angle droit. Roulez la personne sur le côté en tirant sur le genou fléchi.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Exécution de la position latérale de sécurité</h2>
+                <h2 id="SubTitle">Étape 3</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep3.gif">
+                <p id="Text">Ouvrez les voies respiratoires en inclinant doucement la tête vers l’arrière et en levant
+                    le menton de la victime, et vérifiez que rien ne bloque ses voies respiratoires.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="ES === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">EJECUCIÓN DE POSICIÓN DE RECUPERACIÓN</h2>
+                <h2 id="SubTitle">PASO 1:</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep1.gif">
+                <p id="Text">
+                    Con la persona recostada hacia atrás, arrodíllese en el piso al lado de la persona. Extienda el
+                    brazo más cercano de usted en ángulo recto de su cuerpo con la palma de la mano hacia arriba.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">EJECUCIÓN DE POSICIÓN DE RECUPERACIÓN</h2>
+                <h2 id="SubTitle">PASO 2:</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep2.gif">
+                <p id="Text">
+                    Tome el otro brazo y dóblelo de modo que el dorso de la mano descanse sobre la mejilla más cercana a
+                    usted y manténgalo en su lugar. Use la mano que está libre para doblar en ángulo recto la rodilla de
+                    la persona mas alejada de usted. Ponga a la persona de lado tirando de la rodilla doblada.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">EJECUCIÓN DE POSICIÓN DE RECUPERACIÓN</h2>
+                <h2 id="SubTitle">PASO 3:</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep3.gif">
+                <p id="Text">Abra las vías respiratorias inclinando suavemente la cabeza hacia atrás y levantando la
+                    barbilla y revise que no haya nada bloqueando las vías respiratorias.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+    <ion-slides pager='true' *ngIf="RUS === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ВЫПОЛНЕНИЕ ВОССТАНОВИТЕЛЬНОЙ ПОЗЫ</h2>
+                <h2 id="SubTitle">ШАГ 1:</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep1.gif">
+                <p id="Text">Когда человек лежит на спине, встаньте на колени на пол рядом с ним. Вытяните ближайшую к
+                    вам руку под прямым углом к телу ладонью вверх.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ВЫПОЛНЕНИЕ ВОССТАНОВИТЕЛЬНОЙ ПОЗЫ</h2>
+                <h2 id="SubTitle">ШАГ 2:</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep2.gif">
+                <p id="Text">Возьмите другую руку и согните ее так, чтобы тыльная сторона ладони покоилась на ближайшей
+                    к вам щеке, и удерживайте ее на месте. Свободной рукой согните дальнее колено человека, под прямым
+                    углом. Поверните человека на бок, потянув за согнутое колено.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ВЫПОЛНЕНИЕ ВОССТАНОВИТЕЛЬНОЙ ПОЗЫ</h2>
+                <h2 id="SubTitle">ШАГ 3:</h2>
+                <img id="Image" src="./assets/imgs/airway/RecoveryPositionStep3.gif">
+                <p id="Text">Откройте дыхательные пути, осторожно откинув голову назад и приподняв подбородок, и
+                    убедитесь, что дыхательные пути ничем не перекрыты.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

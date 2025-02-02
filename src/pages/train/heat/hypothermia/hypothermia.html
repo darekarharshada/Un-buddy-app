@@ -1,0 +1,331 @@
+<ion-header no-border>
+  <ion-navbar hideBackButton color="transparent">
+    <ion-buttons left>
+      <button
+        ion-button
+        class="ion-icon"
+        color="light"
+        icon-only
+        (click)="GoBack()"
+      >
+        <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Hypothermia</h2>
+    <p id="Text">
+      Hypothermia is a medical emergency that occurs when your body loses heat
+      faster than it can produce heat, causing a dangerously low body
+      temperature. Severe hypothermia can be identified by the following
+      symptoms: • Shivering • Slurred speech or mumbling • Slow, shallow
+      breathing • Weak pulse • Clumsiness or lack of coordination • Drowsiness
+      or very low energy • Confusion or memory loss • Loss of consciousness •
+      Bright red, cold skin (in infants)
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ГИПОТЕРМИЯ</h2>
+    <p id="Text">
+      Гипотермия - это неотложная медицинская помощь, которая возникает, когда
+      ваше тело теряет тепло быстрее, чем может его производить, вызывая опасно
+      низкую температуру тела. Тяжелую гипотермию можно определить по следующим
+      симптомам: • Тремор • Невнятная речь или заикание • Медленное,
+      поверхностное дыхание • Слабый пульс • Неуклюжесть или отсутствие
+      координации • Сонливость или очень низкий уровень энергии • Спутанность
+      сознания или потеря памяти • Потеря знаний • Красная, холодная кожа (у
+      младенцев)
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Hypothermie</h2>
+    <p id="Text">
+      L’hypothermie est une urgence médicale qui survient lorsque votre corps
+      perd de la chaleur plus rapidement qu’il ne peut en produire, ce qui
+      entraîne une température corporelle dangereusement basse. L’hypothermie
+      sévère peut être identifiée par les symptômes suivants: • Frissonnements •
+      Troubles de l’élocution ou marmonnements • Respiration lente et
+      superficielle • Pouls faible • Maladresse ou manque de coordination •
+      Somnolence ou très faible énergie • Confusion ou perte de mémoire • Perte
+      de conscience • Peau rouge vif, peau froide (chez les nourrissons)
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">HIPOTERMIA</h2>
+    <p id="Text">
+      La hipotermia es una emergencia médica que ocurre cuando el cuerpo pierde
+      calor más rápido de lo que puede producirlo, causando una temperatura
+      corporal peligrosamente baja. La hipotermia grave puede identificarse por
+      los siguientes síntomas: • Temblores • Habla entrecortada o balbuceos •
+      Respiración lenta y superficial • Pulso débil • Torpeza o falta de
+      coordinación • Somnolencia o energía muy baja • Confusión o pérdida de
+      memoria • Pérdida de conocimiento • Piel roja y fría (en bebés)
+    </p>
+  </ion-card>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Treating hypothermia</h2>
+    <p id="Text">
+      Depending on the severity of hypothermia, emergency medical care for
+      hypothermia may include one of the following interventions: • Cover them
+      with heated blankets or use sleeping bag • Offer warm fluids to drink
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ЛЕЧЕНИЕ ПЕРЕОХЛАЖДЕНИЯ</h2>
+    <p id="Text">
+      В зависимости от тяжести переохлаждения неотложная медицинская помощь
+      может включать одно из следующих мероприятий: • Укройте пострадавшего
+      тепловыми одеялами или используйте спальный мешок. • Предложите выпить
+      теплую жидкость.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Traitement de l’hypothermie</h2>
+    <p id="Text">
+      Les soins médicaux d’urgence sont fonctions de la sévérité de
+      l’hypothermie et peuvent comprendre l’une des interventions suivantes: •
+      Couvrir avec des couvertures chauffantes ou utilisez un sac de couchage. •
+      Proposer des liquides chauds à boire
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">TRATAMIENTO PARA LA HIPOTERMIA</h2>
+    <p id="Text">
+      Dependiendo de la gravedad de la hipotermia, la atención médica de
+      emergencia puede incluir una de las siguientes intervenciones: • Cubrir a
+      la persona con mantas térmicas o utilizar un saco de dormir. • Ofrecer
+      líquidos calientes para beber.
+    </p>
+  </ion-card>
+
+  <ion-slides pager="true" *ngIf="ENG === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Hypothermia wrap</h2>
+        <h2 id="SubTitle">Step 1</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep1.gif" />
+        <p id="Text">
+          Lay out a tarp on the ground. Place one or two (sleeping) pads down on
+          top of the tarp. Two pads are always better than one.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Hypothermia wrap</h2>
+        <h2 id="SubTitle">Step 2</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep2.gif" />
+        <p id="Text">Stack two sleeping bags on top of the pads.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Hypothermia wrap</h2>
+        <h2 id="SubTitle">Step 3</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep3.gif" />
+        <p id="Text">Place the victim inside the second sleeping bag.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Hypothermia wrap</h2>
+        <h2 id="SubTitle">Step 4</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep4.gif" />
+        <p id="Text">Place a third sleeping bag on top.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Hypothermia wrap</h2>
+        <h2 id="SubTitle">Step 5</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep5.gif" />
+        <p id="Text">Wrap the victim in the tarp.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Hypothermia wrap</h2>
+        <h2 id="SubTitle">Step 6</h2>
+        <img id="Image" src="./assets/imgs//heat/HypoWrapStep6.gif" />
+        <p id="Text">
+          Avoid opening the hypothermia wrap if possible as opening and closing
+          will significantly reduce its effectiveness.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="RUS === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ОБЕРТЫВАНИЕ ПРИ ГИПОТЕРМИИ</h2>
+        <h2 id="SubTitle">ШАГ 1</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep1.gif" />
+        <p id="Text">Расстелите один или два брезента. Два брезента всегда лучше, чем один.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ОБЕРТЫВАНИЕ ПРИ ГИПОТЕРМИИ</h2>
+        <h2 id="SubTitle">ШАГ 2</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep2.gif" />
+        <p id="Text">Положите два спальных мешка поверх брезента.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ОБЕРТЫВАНИЕ ПРИ ГИПОТЕРМИИ</h2>
+        <h2 id="SubTitle">ШАГ 3</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep3.gif" />
+        <p id="Text">Поместите пострадавшего во второй спальный мешок.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ОБЕРТЫВАНИЕ ПРИ ГИПОТЕРМИИ</h2>
+        <h2 id="SubTitle">ШАГ 4</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep4.gif" />
+        <p id="Text">Положите третий спальный мешок поверх предыдущего.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ОБЕРТЫВАНИЕ ПРИ ГИПОТЕРМИИ</h2>
+        <h2 id="SubTitle">ШАГ 5</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep5.gif" />
+        <p id="Text">Заверните пострадавшего в брезент.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ОБЕРТЫВАНИЕ ПРИ ГИПОТЕРМИИ</h2>
+        <h2 id="SubTitle">ШАГ 6</h2>
+        <img id="Image" src="./assets/imgs//heat/HypoWrapStep6.gif" />
+        <p id="Text">
+          По возможности не раскрывайте пострадавшего, поскольку постоянное
+          открывание и закрывание значительно снизит эффективность.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="FR === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Enveloppement hypothermique</h2>
+        <h2 id="SubTitle">Étape 1</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep1.gif" />
+        <p id="Text">
+          Posez une bâche sur le sol. Placez un ou deux coussins (oreillers) sur
+          le dessus de la bâche. Deux coussins valent mieux qu’un.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Enveloppement hypothermique</h2>
+        <h2 id="SubTitle">Étape 2</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep2.gif" />
+        <p id="Text">Empilez deux sacs de couchage sur les coussins.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Enveloppement hypothermique</h2>
+        <h2 id="SubTitle">Étape 3</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep3.gif" />
+        <p id="Text">Placez la victime dans le deuxième sac de couchage.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Enveloppement hypothermique</h2>
+        <h2 id="SubTitle">Étape 4</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep4.gif" />
+        <p id="Text">Placez un troisième sac de couchage par-dessus.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Enveloppement hypothermique</h2>
+        <h2 id="SubTitle">Étape 5</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep5.gif" />
+        <p id="Text">Enveloppez la victime dans la bâche.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Enveloppement hypothermique</h2>
+        <h2 id="SubTitle">Étape 6</h2>
+        <img id="Image" src="./assets/imgs//heat/HypoWrapStep6.gif" />
+        <p id="Text">
+          Évitez si possible d'ouvrir l'enveloppe hypothermique, car l'ouverture
+          et la fermeture réduisent considérablement son efficacité.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" *ngIf="ES === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ENVOLTURA PARA LA HIPOTERMIA</h2>
+        <h2 id="SubTitle">PASO 1</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep1.gif" />
+        <p id="Text">
+          Extienda una lona en el suelo. Coloque uno o dos lonas. Dos lonas
+          siempre son mejor que una.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ENVOLTURA PARA LA HIPOTERMIA</h2>
+        <h2 id="SubTitle">PASO 2</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep2.gif" />
+        <p id="Text">
+          Apile dos sacos de dormir en la parte superior de las lonas.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ENVOLTURA PARA LA HIPOTERMIA</h2>
+        <h2 id="SubTitle">PASO 3</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep3.gif" />
+        <p id="Text">Coloque a la víctima dentro del segundo saco de dormir.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ENVOLTURA PARA LA HIPOTERMIA</h2>
+        <h2 id="SubTitle">PASO 4</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep4.gif" />
+        <p id="Text">Coloque un tercer saco de dormir sobre el anterior.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ENVOLTURA PARA LA HIPOTERMIA</h2>
+        <h2 id="SubTitle">PASO 5</h2>
+        <img id="Image" src="./assets/imgs/heat/HypoWrapStep5.gif" />
+        <p id="Text">Envuelva la víctima en la lona.</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ENVOLTURA PARA LA HIPOTERMIA</h2>
+        <h2 id="SubTitle">PASO 6</h2>
+        <img id="Image" src="./assets/imgs//heat/HypoWrapStep6.gif" />
+        <p id="Text">
+          Evite abrir la envoltura para hipotermia si es posible, ya que abrirla
+          y cerrarla reducirá significativamente su efectividad.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

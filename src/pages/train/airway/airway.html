@@ -1,0 +1,69 @@
+<ion-header no-border>
+    <ion-navbar color="transparent">
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-buttons *ngIf="ENG === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeadtilt()">
+            Head-tilt
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="FR === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeadtilt()">
+            Inclinaison de la tête
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="ES === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeadtilt()">
+            INCLINACIÓN DE LA CABEZA
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="RUS === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeadtilt()">
+            НАКЛОН ГОЛОВЫ
+        </button>
+    </ion-buttons>
+
+    <ion-buttons *ngIf="ENG === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRecovery()">
+            Recovery position
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="FR === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRecovery()">
+            Position de récupération
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="ES === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRecovery()">
+            POSICIÓN DE RECUPERACIÓN
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="RUS === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRecovery()">
+            ИСХОДНОЕ ПОЛОЖЕНИЕ
+        </button>
+    </ion-buttons>
+
+    <ion-buttons *ngIf="ENG === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoSitup()">
+            Sit-up and forward position
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="FR === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoSitup()">
+            Position assise et en avant
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="ES === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoSitup()">
+            POSICIÓN SENTADA HACIA ADELANTE
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="RUS === true">
+        <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoSitup()">
+            ПОЛОЖЕНИЕ СИДЯ ВПЕРЕД
+        </button>
+    </ion-buttons>
+</ion-content>

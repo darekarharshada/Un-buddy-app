@@ -1,0 +1,86 @@
+page-protocol {
+    ion-content {
+        background: 
+        linear-gradient(0deg, rgba(56, 93, 138, 0.1),  rgba(56, 93, 138, 0.0) 60%),
+        linear-gradient(270deg, rgba(150,179,196,0.1), rgba(150,179,196,0.0) 80%),
+        linear-gradient(120deg, rgba(150,224,235,0.2), rgba(150,224,235,0) 80%);
+    }
+
+    .toolbar-background {
+        background: transparent;
+      }
+   
+    .back-button-icon-md, .back-button-icon-ios {
+        color: rgba(56, 93, 138, 1);
+    }
+
+    .button{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        padding-top: 2px;
+        //border-width: 1.5px;
+        font-size: 2.0em;
+        font-family: "BebasBook";
+        border-color: rgba(56, 93, 138, 1);
+        //color: white;
+        color: rgba(56, 93, 138, 1);
+        background-color: transparent;
+    }
+
+    .placeholderhidden{
+        height: 98px;
+    }
+
+    #yesbutton{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 1.2em;
+        font-family: "Bebas";
+    }
+
+    #nobutton{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 1.2em;
+        font-family: "IntroBook";
+    }
+
+    #InstructionText{
+        height: 150px;
+        margin: auto;  
+        text-align: center;
+        //text-transform: uppercase;
+        font-size: 2em;
+        font-family: "BebasRegular";
+        //color: rgba(56, 93, 138, 0.8);
+        //color: white;
+        color: rgba(56, 93, 138, 1);
+        display: flex;
+        align-items: center;
+        //white-space: pre;
+		//white-space: pre-wrap;
+    }
+
+    #segments{
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #Checkmark{
+        font-size: 2em; 
+        padding-left: 2px;
+    }
+
+    #CheckmarkAndroid{
+        font-size: 1em;
+        padding-left: 2px;
+    }
+
+
+
+   
+}

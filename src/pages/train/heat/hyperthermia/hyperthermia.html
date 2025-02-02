@@ -1,0 +1,225 @@
+<ion-header no-border>
+  <ion-navbar hideBackButton color="transparent">
+    <ion-buttons left>
+      <button
+        ion-button
+        class="ion-icon"
+        color="light"
+        icon-only
+        (click)="GoBack()"
+      >
+        <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Hyperthermia</h2>
+    <p id="Text">
+      Hyperthermia (heat cramps/heat exhaustion or heat stroke) is elevated body
+      temperature as the body produces or absorbs more heat than it dissipates.
+      Extreme temperature elevation becomes a medical emergency requiring
+      immediate treatment to prevent disability or death.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Hyperthermie</h2>
+    <p id="Text">
+      Hyperthermia (heat cramps/heat exhaustion or heat stroke) is elevated body
+      temperature as the body produces or absorbs more heat than it dissipates.
+      Extreme temperature elevation becomes a medical emergency requiring
+      immediate treatment to prevent disability or death.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">HIPERTERMIA</h2>
+    <p id="Text">
+      Hipertermia (calambres por calor/insolación o golpe de calor) es la
+      temperatura corporal elevada cuando el cuerpo genera o absorbe más calor
+      de lo que puede disipar. Un aumento extremo de la temperatura es una
+      emergencia médica que requiere tratamiento inmediato para prevenir
+      discapacidades o la muerte.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ГИПЕРТЕРМИЯ</h2>
+    <p id="Text">
+      Гипертермия (тепловые судороги / инсульт или тепловой удар) - это
+      повышенная температура тела, когда организм вырабатывает или поглощает
+      больше тепла, чем может рассеять. Резкое повышение температуры - это
+      неотложная медицинская помощь, требующая немедленного лечения для
+      предотвращения инвалидности или смерти.
+    </p>
+  </ion-card>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Heat exhaustion</h2>
+    <p id="Text">
+      As the body’s organs and muscle tissue lose fluid, they draw this fluid
+      from the fat cells and circulating blood causing the heart rate to
+      increase in an effort to maintain blood pressure. Signs of Heat Exhaustion
+      include: • Excessive Sweating • Mild Headaches • Dizziness and/or
+      confusion • Loss of Appetite
+    </p>
+    <p id="SubTitle">Treatment</p>
+    <p id="Text">
+      Emergency medical care for hyperthermia may include one of the following
+      interventions: • Remove person from the elements into the shade • Use cold
+      wet towels or dampen clothing with tepid water • Offer cool fluids to
+      drink Avoid hot, heavy meals. Do not immerse someone who is suffering from
+      hyperthermia into a body of cold water
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Épuisement par la chaleur</h2>
+    <p id="Text">
+      Lorsque les organes et les tissus musculaires du corps perdent du liquide,
+      ils le tirent des cellules adipeuses et du sang en circulation, ce qui
+      fait augmenter la fréquence cardiaque dans un effort de maintenir la
+      tension artérielle. Les signes d’épuisement par la chaleur incluent : •
+      Transpiration excessive • Légers maux de tête • Vertige et/ou confusion •
+      Perte d’appétit
+    </p>
+    <p id="SubTitle">Traitement</p>
+    <p id="Text">
+      Les soins médicaux d'urgence en cas d'hyperthermie peuvent comprendre
+      l'une des interventions suivantes : • Retirez la personne du soleil et la
+      mettre à l’ombre • Utilisez des serviettes humides froides ou mouiller les
+      vêtements avec de l’eau tiède • Offrez des boissons froides Évitez les
+      repas chauds et lourds. Ne plongez pas une personne souffrant
+      d'hyperthermie dans un plan d'eau froide.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">INSOLACIÓN</h2>
+    <p id="Text">
+      A medida que los órganos y tejidos musculares del cuerpo pierden líquido,
+      extraen este líquido de las células grasas y de la sangre circulante,
+      haciendo que la frecuencia cardíaca aumente en un intento de mantener la
+      presión arterial. Los signos de insolación incluyen: • Sudoración
+      excesiva. • Dolores leves de cabeza. • Mareo o confusión. • Pérdida de
+      apetito
+    </p>
+    <p id="SubTitle">TRATAMIENTO</p>
+    <p id="Text">
+      La atención médica de emergencia para la hipertermia puede incluir una de
+      las siguientes intervenciones: • Alejar a la persona del ambiente caluroso
+      hacia la sombra. • Usar toallas mojadas frías o humedecer la ropa con agua
+      tibia. • Proporcionar líquidos fríos para beber. Evitar comidas pesadas y
+      calientes. No sumergir a alguien que está sufriendo hipertermia en agua
+      fría.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ИНСОЛЯЦИЯ</h2>
+    <p id="Text">
+      По мере того, как органы тела и мышечные ткани теряют жидкость, они
+      забирают эту жидкость из жировых клеток и циркулирующей крови, вызывая
+      учащение сердцебиения в попытке поддерживать кровяное давление. Признаки
+      теплового удара включают: • Повышенное потоотделение. • Легкие головные
+      боли. • Головокружение и / или спутанность сознания. • Потеря аппетита
+    </p>
+    <p id="SubTitle">ЛЕЧЕНИЕ</p>
+    <p id="Text">
+      Неотложная медицинская помощь при гипертермии может включать одно из
+      следующих вмешательств: Переместите пострадавшего из жаркого помещения в
+      тень. Используйте холодные влажные полотенца или смочите одежду теплой
+      водой. Пейте холодные жидкости. Избегайте тяжелой и горячей пищи. Не
+      погружайте человека, страдающего гипертермией, в холодную воду.
+    </p>
+  </ion-card>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Heat stroke</h2>
+    <p id="Text">
+      If fluid and electrolyte levels are not rapidly replaced, the casualty’s
+      level of consciousness will continue to decline, leading to Heat Stroke.
+      Signs of Heat Stroke include: • Throbbing Headache • Little or no sweating
+      • Vomiting • Red skin which is dry and hot to the touch • Loss of
+      Consciousness (fainting)
+    </p>
+    <p id="SubTitle">Treatment</p>
+    <p id="Text">
+      Heat Stroke is a medical emergency. Without rapid intervention, the
+      casualty may suffer irreversible brain and organ damage. The treatment for
+      Heat Stoke in a hot field environment is referred to as ‘rapid cooling’.
+      This is achieved by: • Requesting assistance of a medical professional as
+      soon as possible • Moving the casualty to shade if possible • Removing the
+      casualty’s clothing (except underwear) • Pouring water (30ºC-40ºC) over
+      the casualty below the neck. Use as much water as possible (approx40-80L)
+      • Medical professional to administer IV fluid
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Insolation</h2>
+    <p id="Text">
+      Si les niveaux de liquide et d’électrolytes ne sont pas rapidement
+      rééquilibrés, l’état de conscience de la victime continuera de décliner,
+      ce qui entraînera une insolation. Les signes d’insolation incluent : •
+      Maux de tête lancinants • Pas de transpiration ou transpiration légère. •
+      Vomissements • Peau rouge, sèche et chaude au toucher • Perte de
+      conscience (évanouissement)
+    </p>
+    <p id="SubTitle">Traitement</p>
+    <p id="Text">
+      L’insolation est une urgence médicale. Sans intervention rapide, la
+      victime peut souffrir de dommages irréversibles au cerveau et aux organes.
+      Le traitement de l’insolation dans un environnement de terrain surchauffé
+      est appelé « refroidissement rapide ». Pour ce faire, il faut : • Demander
+      au plus tôt l’aide d’un professionnel de la santé • Mettre la victime à
+      l’ombre si possible • Retirer les vêtements de la victime (sauf les
+      sous-vêtements) • Verser de l’eau (30ºC-40ºC) sur la victime en dessous du
+      cou. Utiliser autant d’eau que possible (de 40 à 80 litres environ) • Un
+      professionnel de la santé qui administre du liquide par voie intraveineuse
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">GOLPE DE CALOR</h2>
+    <p id="Text">
+      Si los niveles de líquidos y electrolitos no se reponen rápidamente, el
+      nivel de conciencia de la víctima seguirá disminuyendo, llevándola a una
+      insolación. Los signos de un golpe de calor incluyen: • Dolor de cabeza
+      palpitante. • Poca o nada de sudoración. • Vómitos. • Piel enrojecida, la
+      cual es seca y caliente al tacto. • Pérdida de conciencia (desmayo).
+    </p>
+    <p id="SubTitle">TRATAMIENTO</p>
+    <p id="Text">
+      El golpe de calor es una emergencia médica. Sin la intervención inmediata,
+      la víctima podría sufrir daños irreversibles de los órganos y el cerebro.
+      El tratamiento para el golpe de calor en un ambiente caluroso se conoce
+      como ‘enfriamiento rápido’, y se logra de la siguiente manera: • Solicitar
+      la asistencia de un médico profesional lo antes posible. • Trasladar a la
+      víctima a la sombra de ser posible • Quitarle la ropa a la víctima
+      (excepto la ropa interior). • Verter agua (30 °C o 40 °C) sobre la víctima
+      debajo del cuello. Utilizar la • mayor cantidad de agua posible
+      (aproximadamente entre 40 a 80 litros). • Un médico profesional debe de
+      administrar líquidos por vía intravenosa.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ТЕПЛОВОЙ УДАР</h2>
+    <p id="Text">
+      Если уровень жидкости и электролитов быстро не восполняется, уровень
+      сознания пострадавшего будет продолжать снижаться, что приведет к
+      тепловому удару. Признаки теплового удара включают: • Пульсирующую
+      головную боль. • Незначительное потоотделение или его отсутствие. • Рвота.
+      • Покрасневшая кожа, сухая и горячая на ощупь. • Потеря сознания
+      (обморок).
+    </p>
+    <p id="SubTitle">ЛЕЧЕНИЕ</p>
+    <p id="Text">
+      Тепловой удар требует неотложной медицинской помощи. Без немедленного
+      вмешательства пострадавший может получить необратимое повреждение органов
+      и головного мозга. Лечение теплового удара в условиях высокой температуры
+      известно как "быстрое охлаждение" и достигается следующим образом: • Как
+      можно скорее обратитесь за помощью к профессиональному врачу. • По
+      возможности переместите пострадавшего в тень. • Снимите с пострадавшего
+      одежду (кроме нижнего белья). • Налейте пострадавшему воду (30-40 ° C)
+      ниже шеи. Используйте как можно больше воды (примерно 40-80 литров). •
+      Медицинский работник должен вводить жидкости внутривенно.
+    </p>
+  </ion-card>
+</ion-content>

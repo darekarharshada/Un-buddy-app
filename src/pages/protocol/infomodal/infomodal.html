@@ -1,0 +1,18 @@
+<ion-header no-border>
+  <ion-navbar color="transparent">
+    <ion-buttons left>
+        <button ion-button class="ion-icon" color="light" icon-only  (click)="ModalDismiss()">
+            <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-card class="card" *ngFor="let item of Information; let i = index">
+        <h2 id="Title">{{ Information[i].Title }}</h2>
+        <p id="Text">{{ Information[i].Text }}</p>  
+        <img *ngIf="Image1" id="Image1" src=".{{Information[i].ImageURL}}">  
+    </ion-card>
+
+</ion-content>

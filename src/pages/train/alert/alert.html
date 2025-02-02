@@ -1,0 +1,128 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">4-liner</h2>
+        <p id="Text">An alert message must be transmitted as soon as possible, and no later than 10 minutes after
+            casualties are sustained to ensure rapid access to evacuation assets. The United Nations has adopted a basic
+            4-line situation report.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">4 lignes</h2>
+        <p id="Text">Un message d'alerte doit être transmis dès que possible, et au plus tard 10 minutes après que les
+            victimes ont été blessées, pour assurer un accès rapide aux moyens d'évacuation. L'Organisation des Nations
+            Unies a adopté un rapport de situation standard de quatre lignes.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">4-LÍNEAS</h2>
+        <p id="Text">
+            Un mensaje de alerta debe ser transmitido tan pronto como sea posible y no excediendo 10 minutos después de
+            que se produzcan las víctimas, para garantizar una evacuación rápida. Las Naciones Unidas han adoptado un
+            informe de situación básico que consta de cuatro líneas.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">4 СТРОКИ</h2>
+        <p id="Text">Сообщение о тревоге должно быть передано как можно скорее, но не более чем через 10 минут после
+            появления пострадавших, для обеспечения быстрой эвакуации. Организация Объединенных Наций приняла базовый
+            отчет о ситуации, состоящий из четырех строк.</p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Location</h2>
+        <p id="Text">Where are you? Provide the exact location of desired pick-up (e.g. UTM, MGRS, Lat/Long).</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Lieu</h2>
+        <p id="Text">Où êtes-vous ? Indiquez l'emplacement exact de l'enlèvement souhaité (p.ex., UTM, MGRS, Lat/Long).
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">UBICACIÓN</h2>
+        <p id="Text">¿Dónde está? Proporcione la ubicación exacta de extracción deseada (por ejemplo, UTM, MGRS,
+            LAT/LONG). </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ЛОКАЦИЯ</h2>
+        <p id="Text">Где находится? Укажите точное желаемое местоположение эвакуации (например, ВРЕМЯ, МЕСТО, ШИРОТА /
+            ДОЛГОТА).</p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Incident</h2>
+        <p id="Text">What has happened? Include information as to the radio frequency, phone or satellite phone
+            on-scene.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Incident</h2>
+        <p id="Text">Que s'est-il passé ? Donnez les informations sur la fréquence radio, le téléphone – satellite sur
+            place.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">INCIDENTE</h2>
+        <p id="Text">
+            ¿Qué ha ocurrido? Incluya información sobre la frecuencia de radio, teléfono o teléfono satelital en el
+            lugar.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ИНЦИДЕНТ</h2>
+        <p id="Text">Что произошло? Включите информацию о частоте радиосвязи, телефоне или спутниковой связи в
+            местоположении.</p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Actions taken</h2>
+        <p id="Text">What are you doing? For example “We are providing first aid on the side of the road”, or “We are
+            self-driving to nearest hospital”.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Mesures prises</h2>
+        <p id="Text">Qu'est-ce que vous faites ? Par exemple, « Nous prodiguons les premiers soins sur le bord de la
+            route », ou « Nous nous rendons en voiture à l'hôpital le plus proche ».</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">ACCIONES TOMADAS</h2>
+        <p id="Text">
+            ¿Qué han hecho? Por ejemplo “Estamos proporcionando primeros auxilios al costado de la carretera” o
+            “Conducimos sin ayuda hasta el hospital más cercano”.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ПРЕДПРИНЯТЫЕ ДЕЙСТВИЯ</h2>
+        <p id="Text">Что было сделано? Например, “Мы оказываем первую помощь на обочине дороги” или “Мы едем без
+            посторонней помощи в ближайшую больницу”.</p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Resources required</h2>
+        <p id="Text">What do you want? Is there any special equipment needed at the site (e.g. Hoist, Extrication
+            Equipment, Ventilators)? </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Ressources nécessaires</h2>
+        <p id="Text">Que voulez-vous ? A-t-on besoin d'équipement spécial sur le site (p.ex. un treuil, un équipement de
+            dégagement, des ventilateurs)?</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">RECURSOS NECESARIOS</h2>
+        <p id="Text">
+            ¿Qué necesita? ¿Hay algún equipo especial en el sitio (por ejemplo, elevadores, equipos de extracción,
+            ventiladores)?
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">НЕОБХОДИМЫЕ РЕСУРСЫ</h2>
+        <p id="Text">Что вам нужно? Имеется ли на объекте какое-либо специальное оборудование (например, подъемники,
+            оборудование для извлечения, вентиляторы)?</p>
+    </ion-card>
+
+</ion-content>

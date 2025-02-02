@@ -1,0 +1,71 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Head-tilt</h2>
+        <p id="Text">The head-tilt technique is used to most rapidly open the casualty’s upper airway. The head tilt
+            provides the added benefit of maintaining the airway in an open position without the need for the
+            first-aider to maintain constant contact with the head, allowing the first-aider to use their hands to
+            provide other treatments.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Inclinaison de la tête</h2>
+        <p id="Text">La technique d’inclinaison de la tête est utilisée pour ouvrir le plus rapidement possible les
+            voies aériennes supérieures de la victime. L’inclinaison de la tête offre l’avantage supplémentaire de
+            maintenir les voies respiratoires en position ouverte sans que le secouriste n’ait besoin de maintenir un
+            contact constant avec la tête, ce qui permet aux secouristes d’utiliser leurs mains pour effectuer d’autres
+            traitements.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">INCLINACIÓN DE LA CABEZA </h2>
+        <p id="Text">
+            La técnica de inclinación de la cabeza se utiliza para abrir más rápidamente las vías respiratorias
+            superiores del herido. La inclinación proporciona un beneficio adicional de mantener las vías respiratorias
+            en una posición abierta sin la necesidad de que el socorrista mantenga un contacto constante con la cabeza,
+            lo que le permite al socorrista utilizar sus manos para proporcionar otros tratamientos.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">НАКЛОН ГОЛОВЫ</h2>
+        <p id="Text">Техника наклона головы используется для более быстрого открытия верхних дыхательных путей
+            пострадавшего. Наклон обеспечивает дополнительное преимущество в поддержании дыхательных путей в открытом
+            положении без необходимости для спасателя поддерживать постоянный контакт головой, позволяя спасателю
+            использовать свои руки для проведения других процедур.</p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Performing the head-tilt</h2>
+        <img id="Image" src="./assets/imgs/airway/headtilt.gif">
+        <p id="Text">The technique is carried out by using one hand to place downward pressure on the casualty’s
+            forehead, while using your other hand to raise the chin and jaw of the victim, extending the head and neck
+            backward.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Exécution de l’inclinaison de la tête</h2>
+        <img id="Image" src="./assets/imgs/airway/headtilt.gif">
+        <p id="Text">La technique est effectuée en utilisant une main pour exercer une pression vers le bas sur le front
+            de la victime, tout en utilisant votre autre main pour soulever le menton et la mâchoire de la victime, en
+            étendant la tête et le cou vers l’arrière.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">EJECUCIÓN DE LA INCLINACIÓN DE LA CABEZA</h2>
+        <img id="Image" src="./assets/imgs/airway/headtilt.gif">
+        <p id="Text">La técnica se lleva a cabo utilizando una mano para ejercer presión hacia abajo sobre la frente de
+            la víctima, mientras usa la otra mano para levantar la barbilla y mandíbula de la víctima, extendiendo la
+            cabeza y cuello hacia atrás.</p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ВЫПОЛНЕНИЕ НАКЛОНА ГОЛОВЫ</h2>
+        <img id="Image" src="./assets/imgs/airway/headtilt.gif">
+        <p id="Text">Техника выполняется путем надавливания одной рукой на лоб пострадавшего сверху вниз, в то время как
+            другой рукой приподнимают подбородок и челюсть пострадавшего, отводя голову и шею назад.</p>
+    </ion-card>
+</ion-content>

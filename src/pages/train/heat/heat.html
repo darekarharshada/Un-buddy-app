@@ -1,0 +1,48 @@
+<ion-header no-border>
+    <ion-navbar color="transparent">
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-buttons *ngIf="ENG === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHyperthermia()">
+            Hyperthermia
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="FR === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHyperthermia()">
+            Hyperthermie
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="ES === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHyperthermia()">
+            HIPERTERMIA
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="RUS === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHyperthermia()">
+            ГИПЕРТЕРМИЯ
+        </button>
+    </ion-buttons>
+
+    <ion-buttons *ngIf="ENG === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHypothermia()">
+            Hypothermia
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="FR === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHypothermia()">
+            Hypothermie
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="ES === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHypothermia()">
+            HIPOTERMIA
+        </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="RUS === true">
+        <button outline class="buttons" clear full ion-button icon-only (click)="GotoHypothermia()">
+            ГИПОТЕРМИЯ
+        </button>
+    </ion-buttons>
+</ion-content>

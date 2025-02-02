@@ -1,0 +1,56 @@
+<ion-header no-border>
+        <ion-navbar color="transparent">
+        </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+        <ion-buttons *ngIf="ENG === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoTourniquet()">
+                        Tourniquet
+                </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="FR === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoTourniquet()">
+                        Tourniquet
+                </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="ES === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoTourniquet()">
+                        TORNIQUETE
+                </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="RUS === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoTourniquet()">
+                        ЖГУТ
+                </button>
+        </ion-buttons>
+
+        <ion-buttons *ngIf="ENG === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoWoundpacking()">
+                        Woundpacking
+                </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="FR === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoWoundpacking()">
+                        Emballage de la plaie
+                </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="ES === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoWoundpacking()">
+                        VENDAJE DE HERIDAS
+                </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="RUS === true">
+                <button outline class="buttons" clear full ion-button color="light" icon-only
+                        (click)="GotoWoundpacking()">
+                        НАМОТАННАЯ ПОВЯЗКА
+                </button>
+        </ion-buttons>
+</ion-content>

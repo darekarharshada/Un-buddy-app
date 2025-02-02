@@ -1,0 +1,33 @@
+page-home {
+    ion-content {
+        background: 
+        linear-gradient(0deg, rgba(56, 93, 138, 0.8),  rgba(56, 93, 138, 0.2) 60%),
+        linear-gradient(270deg, rgba(150,179,196,0.8), rgba(150,179,196,0.3) 80%),
+        linear-gradient(120deg, rgba(150,224,235,0.9), rgba(150,224,235,0) 80%);
+    }
+
+    //Logo
+    ion-grid {
+        height: 100%;
+        //color: #96b3c4
+    }
+
+    #logocontainer {
+        height: 80%;
+    }
+
+    #logo{
+        height: 35%;
+        min-height:85px;
+    }
+
+    //Buttons
+    .buttons{
+        width: 90%;
+        font-size: 2.0em;
+        font-family: "BebasBook";
+    }
+    #rangenbuttons{
+        text-align: center;
+    }
+}

@@ -1,0 +1,772 @@
+<ion-header no-border>
+  <ion-navbar hideBackButton color="transparent">
+    <ion-buttons left>
+      <button
+        ion-button
+        class="ion-icon"
+        color="light"
+        icon-only
+        (click)="GoBack()"
+      >
+        <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Emergency Pressure Dressing (EPD)</h2>
+    <p id="Text">
+      The EPD was designed specifically with military application in mind and
+      comes contained within double vacuum sealed, water proof packaging. The
+      bandage is available in various sizes (10cm, 15cm and 25cm)
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ЭКСТРЕННАЯ КОМПРЕССИОННАЯ ПОВЯЗКА (ЭКП)</h2>
+    <p id="Text">
+      ЭКП была разработана специально для использования в военных целях, она
+      поставляется в двойной вакуумной упаковке, которая является
+      водонепроницаемой. Бинт доступен различных размеров (10 см, 15 см и 25
+      см).
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Pansement Compressif d’Urgence (PCU)</h2>
+    <p id="Text">
+      Le PCU a été conçu spécifiquement pour les applications militaires et est
+      contenu dans un emballage doublement scellé sous vide et étanche à l’eau.
+      Le bandage est disponible en différentes tailles (10 cm, 15 cm et 25 cm
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">APÓSITO COMPRESIVO DE EMERGENCIA (ACE)</h2>
+    <p id="Text">
+      El ACE fue diseñado específicamente para uso militar, viene en un paquete
+      doble sellado al vacío, que es a prueba de agua. La venda está disponible
+      en varios tamaños (10, 15 y 25 cm.).
+    </p>
+  </ion-card>
+
+  <ion-slides pager="true" *ngIf="ENG === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">One-handed EPD application</h2>
+        <h2 id="SubTitle">Step 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep1.gif" />
+        <p id="Text">
+          Upon opening the packaging of the EPD, stow the plastic wrapper for
+          later use.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">One-handed EPD application</h2>
+        <h2 id="SubTitle">Step 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep2.gif" />
+        <p id="Text">
+          Unfold the EPD and insert injured arm through the loop. The plastic
+          tension Bar should be placed directly over the center of the wound.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">One-handed EPD application</h2>
+        <h2 id="SubTitle">Step 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep3.gif" />
+        <p id="Text">
+          Apply pressure with the EPD bandage and wrap the bandage around the
+          limb maintaining constant pressure. Wrap the bandage around both edges
+          of the dressing with the tension bar still visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">One-handed EPD application</h2>
+        <h2 id="SubTitle">Step 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep4.gif" />
+        <p id="Text">
+          Place the bandage through the tension bar and reverse the direction of
+          the bandage, folding down the tension bar to place additional pressure
+          directly over the wound site.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">One-handed EPD application</h2>
+        <h2 id="SubTitle">Step 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep5.gif" />
+        <p id="Text">
+          Continue wrapping the bandage and secure the running end by tucking
+          the plastic clips into bandage wraps.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="RUS === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ОДНОЙ РУКОЙ</h2>
+        <h2 id="SubTitle">ШАГ 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep1.gif" />
+        <p id="Text">При вскрытии упаковки ЭКП сохраните пластиковую обертку для
+          последующего использования.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ОДНОЙ РУКОЙ</h2>
+        <h2 id="SubTitle">ШАГ 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep2.gif" />
+        <p id="Text">Разверните ЭКП и проденьте через нее поврежденную руку. Пластиковый
+          натяжной стержень следует поместить прямо над центром раны.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ОДНОЙ РУКОЙ</h2>
+        <h2 id="SubTitle">ШАГ 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep3.gif" />
+        <p id="Text">Надавите бинтом и оберните его вокруг конечности, поддерживая
+          постоянное давление. Оберните бинт вокруг обоих краев повязки так,
+          чтобы натяжная планка оставалась видимой.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ОДНОЙ РУКОЙ</h2>
+        <h2 id="SubTitle">ШАГ 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep4.gif" />
+        <p id="Text">Наложите повязку поперек натяжной планки и измените направление
+          повязки, согнув натяжную планку вниз, чтобы оказать дополнительное
+          давление непосредственно на рану.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ОДНОЙ РУКОЙ</h2>
+        <h2 id="SubTitle">ШАГ 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep5.gif" />
+        <p id="Text">Продолжайте наматывать бинт и закрепите конец, вставив пластиковые
+          застежки внутрь бинта.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="FR === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU d’une seule main</h2>
+        <h2 id="SubTitle">Étape 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep1.gif" />
+        <p id="Text">
+          Lors de l’ouverture de l’emballage du PCU, mettez de côté l’emballage
+          en plastique pour une utilisation ultérieure.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU d’une seule main</h2>
+        <h2 id="SubTitle">Étape 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep2.gif" />
+        <p id="Text">
+          Dépliez le PCU et insérez le bras blessé dans la boucle. La barre de
+          tension en plastique doit être placée directement au-dessus du centre
+          de la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU d’une seule main</h2>
+        <h2 id="SubTitle">Étape 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep3.gif" />
+        <p id="Text">
+          Appliquez la pression avec le bandage PCU et enroulez le bandage
+          autour du membre en maintenant une pression constante. Enroulez le
+          bandage autour des deux bords du pansement avec la barre de tension
+          encore visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU d’une seule main</h2>
+        <h2 id="SubTitle">Étape 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep4.gif" />
+        <p id="Text">
+          Placez le bandage à travers la barre de tension et inversez la
+          direction du bandage en rabattant la barre de tension vers le bas pour
+          exercer une pression supplémentaire directement sur la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU d’une seule main</h2>
+        <h2 id="SubTitle">Étape 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep5.gif" />
+        <p id="Text">
+          Continuez à envelopper le bandage et sécurisez l’extrémité de la bande
+          en rentrant les clips en plastique dans les enveloppes de bandage.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" *ngIf="ES === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON UNA SOLA MANO</h2>
+        <h2 id="SubTitle">PASO 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep1.gif" />
+        <p id="Text">
+          Al abrir el paquetes del ACE, guarde el envoltorio de plástico para
+          uso posterior.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON UNA SOLA MANO</h2>
+        <h2 id="SubTitle">PASO 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep2.gif" />
+        <p id="Text">
+          Desdoble el ACE y pase el brazo lesionado a través del mismo. La barra
+          plástica de tensión debe ser colocada directamente sobre el centro de
+          la herida.Desdoblar el ACE y pase el brazo lesionado a través del
+          mismo. La barra plástica de tensión debe ser colocada directamente
+          sobre el centro de la herida
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON UNA SOLA MANO</h2>
+        <h2 id="SubTitle">PASO 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep3.gif" />
+        <p id="Text">
+          Aplicar presión con la venda y envolverla alrededor de la extremidad,
+          manteniendo una presión constante. Envuelva la venda alrededor de
+          ambos bordes del apósito, con la barra de tensión aún visible
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON UNA SOLA MANO</h2>
+        <h2 id="SubTitle">PASO 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep4.gif" />
+        <p id="Text">
+          Coloque la venda a través de la barra de tensión y cambie la dirección
+          de la venda, doblando la barra de tensión hacia abajo para aplicar
+          presión adicional directamente sobre la herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON UNA SOLA MANO</h2>
+        <h2 id="SubTitle">PASO 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/OneHandedEPDStep5.gif" />
+        <p id="Text">
+          Continúe envolviendo el vendaje y asegure el extremo, insertando los
+          sujetadores de plástico dentro de las envolturas.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="ENG === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Two-handed EPD application</h2>
+        <h2 id="SubTitle">Step 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep1.gif" />
+        <p id="Text">
+          Upon opening the packaging of the EPD, stow the plastic wrapper for
+          later use.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Two-handed EPD application</h2>
+        <h2 id="SubTitle">Step 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep2.gif" />
+        <p id="Text">
+          Unfold the EPD taking care to not touch or contaminate the white
+          dressing pad. Apply the EPD with two hands placing the dressing pad
+          over the wound. The plastic tension bar should be placed directly over
+          the center of the wound.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Two-handed EPD application</h2>
+        <h2 id="SubTitle">Step 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep3.gif" />
+        <p id="Text">
+          Apply pressure with the EPD bandage and wrap the bandage around the
+          limb maintaining constant pressure. Wrap the bandage around both edges
+          of the dressing with the tension bar still visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Two-handed EPD application</h2>
+        <h2 id="SubTitle">Step 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep4.gif" />
+        <p id="Text">
+          Place the bandage through the tension bar and reverse the direction of
+          the bandage, folding down the tension bar to place additional pressure
+          directly over the wound site.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Two-handed EPD application</h2>
+        <h2 id="SubTitle">Step 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep5.gif" />
+        <p id="Text">
+          Continue wrapping the bandage and secure the running end by tucking
+          the plastic clips into bandage wraps.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="RUS === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ДВУМЯ РУКАМИ</h2>
+        <h2 id="SubTitle">ШАГ 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep1.gif" />
+        <p id="Text">При вскрытии упаковки ЭКП сохраните пластиковую пленку для
+          последующего использования.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ДВУМЯ РУКАМИ</h2>
+        <h2 id="SubTitle">ШАГ 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep2.gif" />
+        <p id="Text">При разворачивании ЭКП будьте осторожны, чтобы не коснуться белой
+          марли и не испачкать ее. Применяйте ЭКП обеими руками, накладывая
+          марлю на рану. Пластиковую натяжную планку следует расположить прямо
+          по центру раны.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ДВУМЯ РУКАМИ</h2>
+        <h2 id="SubTitle">ШАГ 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep3.gif" />
+        <p id="Text">Надавите туловищем и оберните вокруг конечности, поддерживая
+          постоянное давление. Оберните бинт вокруг обоих краев повязки,
+          сохраняя видимой натяжную планку.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ДВУМЯ РУКАМИ</h2>
+        <h2 id="SubTitle">ШАГ 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep4.gif" />
+        <p id="Text">Наложите повязку поперек натяжной планки и измените направление
+          повязки, согнув натяжную планку вниз, чтобы оказать дополнительное
+          давление непосредственно на рану.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАНЕСЕНИЕ ЭКП ДВУМЯ РУКАМИ</h2>
+        <h2 id="SubTitle">ШАГ 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep5.gif" />
+        <p id="Text">Продолжайте наматывать бинт и закрепите конец, вставив пластиковые
+          застежки внутрь бинта.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="FR === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU à deux mains</h2>
+        <h2 id="SubTitle">Étape 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep1.gif" />
+        <p id="Text">
+          Lors de l’ouverture de l’emballage du PCU, mettez de côté l’emballage
+          en plastique pour une utilisation ultérieure.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU à deux mains</h2>
+        <h2 id="SubTitle">Étape 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep2.gif" />
+        <p id="Text">
+          Dépliez le PCU en prenant soin de ne pas toucher ou contaminer le
+          tampon de pansement blanc. Appliquez le PCU avec les deux mains en
+          plaçant le pansement sur la plaie. La barre de tension en plastique
+          doit être placée directement au-dessus du centre de la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU à deux mains</h2>
+        <h2 id="SubTitle">Étape 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep3.gif" />
+        <p id="Text">
+          Appliquez la pression avec le bandage PCU et enroulez le bandage
+          autour du membre en maintenant une pression constante. Enroulez le
+          bandage autour des deux bords du pansement avec la barre de tension
+          encore visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU à deux mains</h2>
+        <h2 id="SubTitle">Étape 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep4.gif" />
+        <p id="Text">
+          Placez le bandage à travers la barre de tension et inversez la
+          direction du bandage en rabattant la barre de tension vers le bas pour
+          exercer une pression supplémentaire directement sur la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application du PCU à deux mains</h2>
+        <h2 id="SubTitle">Étape 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep5.gif" />
+        <p id="Text">
+          Continuez à envelopper le bandage et sécurisez l’extrémité de la bande
+          en rentrant les clips en plastique dans les enveloppes de bandage.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" *ngIf="ES === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON DOS MANOS</h2>
+        <h2 id="SubTitle">PASO 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep1.gif" />
+        <p id="Text">
+          Al abrir el paquete del ACE, guarde el envoltorio de plástico para uso
+          posterior.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON DOS MANOS</h2>
+        <h2 id="SubTitle">PASO 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep2.gif" />
+        <p id="Text">
+          Al desdoblar el ACE, tenga cuidado de no tocar o contaminar la gasa
+          blanca. Aplique el ACE con las dos manos colocando la gasa sobre la
+          herida. La barra de tensión plástica debe ser colocada directamente
+          sobre el centro de la herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON DOS MANOS</h2>
+        <h2 id="SubTitle">PASO 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep3.gif" />
+        <p id="Text">
+          Aplique presión con el ACE y envuelva alrededor de la extremidad
+          manteniendo presión constante. Envuelva el vendaje alrededor de ambos
+          bordes del apósito manteniendo la barra de tensión visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON DOS MANOS</h2>
+        <h2 id="SubTitle">PASO 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep4.gif" />
+        <p id="Text">
+          Coloque la venda a través de la barra de tensión y cambie la dirección
+          de la venda, doblando la barra de tensión hacia abajo para aplicar
+          presión adicional directamente sobre la herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICACIÓN DE UN ACE CON DOS MANOS</h2>
+        <h2 id="SubTitle">PASO 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/TwoHandedEPDStep5.gif" />
+        <p id="Text">
+          Continúe envolviendo el vendaje y asegure el extremo, insertando los
+          sujetadores de plástico dentro de las envolturas.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="ENG === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD to the head</h2>
+        <h2 id="SubTitle">Step 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep1.gif" />
+        <p id="Text">
+          Upon opening the packaging of the EPD, stow the plastic wrapper for
+          later use.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD to the head</h2>
+        <h2 id="SubTitle">Step 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep2.gif" />
+        <p id="Text">
+          Unfold the EPD taking care to not touch or contaminate the white
+          dressing pad. Apply the EPD with two hands placing the dressing pad
+          over the wound. The plastic tension bar should be placed directly over
+          the center of the wound.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD to the head</h2>
+        <h2 id="SubTitle">Step 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep3.gif" />
+        <p id="Text">
+          Apply pressure with the EPD bandage and wrap the bandage around the
+          head maintaining constant pressure. Wrap the bandage around both edges
+          of the dressing with the tension bar still visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD to the head</h2>
+        <h2 id="SubTitle">Step 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep4.gif" />
+        <p id="Text">
+          Place the bandage through the tension bar and reverse the direction of
+          the bandage, folding down the tension bar to place additional pressure
+          directly over the wound site.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD to the head</h2>
+        <h2 id="SubTitle">Step 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep5.gif" />
+        <p id="Text">
+          Continue wrapping the bandage and secure the running end by tucking
+          the plastic clips into bandage wraps.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="RUS === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ЭКП НА ГОЛОВУ</h2>
+        <h2 id="SubTitle">ШАГ 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep1.gif" />
+        <p id="Text">При вскрытии упаковки ЭКП сохраните пластиковую пленку для
+          последующего использования.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ЭКП НА ГОЛОВУ</h2>
+        <h2 id="SubTitle">ШАГ 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep2.gif" />
+        <p id="Text">При разворачивании ЭКП будьте осторожны, чтобы не коснуться белой
+          марли и не испачкать ее. Применяйте ЭКП обеими руками, накладывая
+          марлю на рану. Пластиковую натяжную планку следует расположить прямо
+          по центру раны.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ЭКП НА ГОЛОВУ</h2>
+        <h2 id="SubTitle">ШАГ 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep3.gif" />
+        <p id="Text">Надавите туловищем и оберните вокруг головы, поддерживая постоянное
+          давление. Оберните бинт вокруг обоих краев повязки, сохраняя видимой
+          натяжную планку.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ЭКП НА ГОЛОВУ</h2>
+        <h2 id="SubTitle">ШАГ 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep4.gif" />
+        <p id="Text">Наложите повязку поперек натяжной планки и измените направление
+          повязки, согнув натяжную планку вниз, чтобы оказать дополнительное
+          давление непосредственно на рану.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">ЭКП НА ГОЛОВУ</h2>
+        <h2 id="SubTitle">ШАГ 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep5.gif" />
+        <p id="Text">Продолжайте наматывать бинт и закрепите конец, вставив пластиковые
+          застежки внутрь бинта.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="FR === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">PCU à la tête</h2>
+        <h2 id="SubTitle">Étape 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep1.gif" />
+        <p id="Text">
+          Lors de l’ouverture de l’emballage du PCU, mettez de côté l’emballage
+          en plastique pour une utilisation ultérieure.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">PCU à la tête</h2>
+        <h2 id="SubTitle">Étape 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep2.gif" />
+        <p id="Text">
+          Dépliez le PCU en prenant soin de ne pas toucher ou contaminer le
+          tampon blanc du pansement. Appliquez le PCU avec les deux mains en
+          plaçant le pansement sur la plaie. La barre de tension en plastique
+          doit être placée directement au-dessus du centre de la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">PCU à la tête</h2>
+        <h2 id="SubTitle">Étape 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep3.gif" />
+        <p id="Text">
+          Appliquez la pression avec le bandage PCU et enroulez le bandage
+          autour du membre en maintenant une pression constante. Enroulez le
+          bandage autour des deux bords du pansement avec la barre de tension
+          encore visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">PCU à la tête</h2>
+        <h2 id="SubTitle">Étape 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep4.gif" />
+        <p id="Text">
+          Placez le bandage à travers la barre de tension et inversez la
+          direction du bandage en rabattant la barre de tension vers le bas pour
+          exercer une pression supplémentaire directement sur la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">PCU à la tête</h2>
+        <h2 id="SubTitle">Étape 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep5.gif" />
+        <p id="Text">Continuez à envelopper le bandage et sécurisez l’extrémité de la bande
+          en rentrant les clips en plastique dans les enveloppes de bandage.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" *ngIf="ES === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD a la cabeza</h2>
+        <h2 id="SubTitle">PASO 1</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep1.gif" />
+        <p id="Text">Al abrir el embalaje de la EPD, guarde el envoltorio plástico para su
+          uso posterior..
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD a la cabeza</h2>
+        <h2 id="SubTitle">PASO 2</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep2.gif" />
+        <p id="Text">Al desdoblar el ACE tenga cuidado de no tocar o contaminar la gasa
+          blanca. Aplique el ACE con las dos manos colocando la gasa sobre la
+          herida. La barra de tensión plástica debe ser colocada directamente
+          sobre el centro de la herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD a la cabeza</h2>
+        <h2 id="SubTitle">PASO 3</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep3.gif" />
+        <p id="Text">Aplique presión con el vendaje EPD y envuelva el vendaje alrededor de
+          la cabeza manteniendo una presión constante. Envuelva el vendaje
+          alrededor de ambos bordes del vendaje con la barra de tensión aún
+          visible.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD a la cabeza</h2>
+        <h2 id="SubTitle">PASO 4</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep4.gif" />
+        <p id="Text">Coloque la venda a través de la barra de tensión y cambie la dirección
+          de la venda, doblando la barra de tensión hacia abajo para aplicar
+          presión adicional directamente sobre la herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">EPD a la cabeza</h2>
+        <h2 id="SubTitle">PASO 5</h2>
+        <img id="Image" src="./assets/imgs/circulation/EPDHeadStep5.gif" />
+        <p id="Text">Continúe envolviendo el vendaje y asegure el extremo que corre
+          metiendo los clips de plástico en las vendas.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

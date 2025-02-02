@@ -1,0 +1,77 @@
+page-infomodal {
+    ion-content {
+        background: 
+        linear-gradient(0deg, rgba(56, 93, 138, 0.8),  rgba(56, 93, 138, 0.2) 60%),
+        linear-gradient(270deg, rgba(150,179,196,0.8), rgba(150,179,196,0.3) 80%),
+        linear-gradient(120deg, rgba(150,224,235,0.9), rgba(150,224,235,0) 80%);
+    }
+
+    .back-button-icon-md, .back-button-icon-ios {
+        color: white;
+    }
+
+    ion-icon {
+        //font-size: 2em; //Preferred size here
+    }
+
+    .card{
+        border-radius: 30px; 
+    }
+
+
+    .swiper-slide{
+        overflow-y: scroll;
+        display: block;
+        }
+        
+    ion-slides{
+        height: auto;
+        }
+
+    div.swiper-pagination {
+            top:80px;
+            bottom:inherit;
+        }
+
+    #Title{
+        padding: 0px;
+        font-size: 2em;
+        text-align: center; 
+        font-family: "BebasRegular";
+        color: rgba(56, 93, 138, 1);
+        white-space: pre-wrap;
+        padding-left: 10px; 
+        padding-right: 10px; 
+        padding-top: 10px; 
+    }
+
+    #SubTitle{
+        padding: 0px;
+        font-size: 1.5em;
+        font-family: "BebasLight";
+        color: rgba(56, 93, 138, 1);
+        white-space: pre-wrap;
+    }
+
+    #Text{
+        text-align: justify;
+        font-family: "OpenSansRegular";
+        line-height: 1.6;
+        color: rgb(114, 114, 114);
+        white-space: pre-wrap;
+        padding-left: 10px; 
+        padding-right: 10px; 
+        padding-bottom: 20px; 
+    }
+
+    .swiper-pagination-bullet-active{
+        background:rgba(56, 93, 138, 1);
+        opacity: 1;
+      }
+
+    #Image1{
+        width: 100%;
+        //height: auto;
+    }
+    
+}

@@ -1,0 +1,275 @@
+<ion-header no-border>
+  <ion-navbar hideBackButton color="transparent">
+    <ion-buttons left>
+      <button
+        ion-button
+        class="ion-icon"
+        color="light"
+        icon-only
+        (click)="GoBack()"
+      >
+        <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-card *ngIf="ENG === true">
+      <h2 id="Title">Emergency movement</h2>
+      <p id="Text">
+        Under ordinary circumstances, moving a casualty is dangerous and should
+        only be attempted by trained medical professionals. However, in some
+        circumstances, movement of the casualty is necessary to prevent further
+        critical injury to the casualty or to gain access to other critically
+        injured casualties.
+      </p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+      <h2 id="Title">Déplacement d’urgence</h2>
+      <p id="Text">
+        Dans des circonstances ordinaires, le déplacement d’une victime est
+        dangereux et ne devrait être tenté que par des professionnels de la
+        santé qualifiés. Toutefois, dans certaines circonstances, le déplacement
+        de la victime est nécessaire pour prévenir d’autres blessures graves ou
+        pour avoir accès à d’autres victimes gravement blessées.
+      </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+      <h2 id="Title">MOVIMIENTOS DE EMERGENCIA</h2>
+      <p id="Text">
+        En circunstancias normales, mover una víctima es peligroso y sólo debe
+        ser intentado por profesionales médicos capacitados. Sin embargo, en
+        algunas circunstancias, el movimiento de la víctima es necesario para
+        evitar más lesiones críticas a la víctima o para tener acceso a otras
+        víctimas graves.
+      </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+      <h2 id="Title">ЭКСТРЕННЫЕ ПЕРЕМЕЩЕНИЯ</h2>
+      <p id="Text">
+        При нормальных обстоятельствах перемещение пострадавшего опасно и должно
+        выполняться только квалифицированными медицинскими работниками. Однако
+        при некоторых обстоятельствах перемещение пострадавшего необходимо для
+        предотвращения дальнейших серьезных травм жертве или для получения
+        доступа к другим серьезным пострадавшим.
+      </p>
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+      <h2 id="Title">Safe-lifting technique</h2>
+      <p id="Text">
+        When attempting to lift or drag a casualty, the First-Aider must ensure
+        that they keep their own spine straight and lift using the large muscle
+        groups of upper legs.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/SafeLifting.gif" />
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+      <h2 id="Title">Technique de levage de sécurité</h2>
+      <p id="Text">
+        Lorsqu’il tente de soulever ou de traîner une victime, le secouriste
+        doit s’assurer de garder sa colonne vertébrale droite et de soulever en
+        utilisant les grands groupes musculaires des membres supérieurs.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/SafeLifting.gif" />
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+      <h2 id="Title">TÉCNICAS DE LEVANTAMIENTO DE AUTO</h2>
+      <p id="Text">
+        Al intentar levantar o arrastrar a una víctima, el socorrista debe
+        asegurarse de mantener su columna recta y levantarse usando los grupos
+        de músculos grandes de las piernas.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/SafeLifting.gif" />
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+      <h2 id="Title">СПОСОБЫ ПОДЪЕМА АВТОМОБИЛЯ</h2>
+      <p id="Text">
+        Пытаясь поднять или перетащить пострадавшего, Спасатель должен быть
+        уверен, что его позвоночник выпрямлен, и подниматься, используя большие
+        группы мышц ног.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/SafeLifting.gif" />
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+      <h2 id="Title">Drag technique</h2>
+      <p id="Text">
+        The drag technique is an emergency movement used by one or two
+        first-aiders to move a victim a short distance to safety. It provides
+        minimal protection to the spine but allows for casualty movement with no
+        equipment and limited rescuers.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/Drag.gif" />
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+      <h2 id="Title">Technique de traînée</h2>
+      <p id="Text">
+        La technique de la traînée est un mouvement d’urgence utilisé par un ou
+        deux secouristes pour déplacer une victime sur une courte distance vers
+        la sécurité. Il offre une protection minimale à la colonne vertébrale,
+        mais permet de déplacer le blessé sans équipement et avec un nombre
+        limité de sauveteurs.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/Drag.gif" />
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+      <h2 id="Title">TÉCNICA DE ARRASTRE</h2>
+      <p id="Text">
+        La técnica de arrastre es un movimiento de emergencia utilizado por uno
+        o dos socorristas, para mover a una víctima de una corta distancia a una
+        zona segura. Esto proporciona una mínima protección a la columna
+        vertebral, pero permite un movimiento sin equipo y con rescatistas
+        limitados.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/Drag.gif" />
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+      <h2 id="Title">ТЕХНИКА ПЕРЕТАСКИВАНИЯ</h2>
+      <p id="Text">
+        Техника перетаскивания - это экстренное движение, используемое одним или
+        двумя спасателями для перемещения жертвы на небольшое расстояние в
+        безопасную зону. Это обеспечивает минимальную защиту позвоночника, но
+        позволяет передвигаться без снаряжения и с ограниченным количеством
+        спасателей.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/Drag.gif" />
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+      <h2 id="Title">King's Throne Technique</h2>
+      <p id="Text">
+        The king's throne technique requires two first-aiders to carry a
+        conscious or semi-conscious casualty. It is achieved by linking wrists
+        together to form a chair or ‘throne’ for the casualty to sit on.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/KingsThrone.gif" />
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+      <h2 id="Title">Technique du trône du roi</h2>
+      <p id="Text">
+        La technique du trône du roi nécessite deux secouristes pour porter une
+        victime consciente ou semi-consciente. Elle est obtenue en reliant les
+        poignets pour former une chaise ou un « trône » sur lequel la victime
+        peut s’asseoir.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/KingsThrone.gif" />
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+      <h2 id="Title">TÉCNICA DEL TRONO DEL REY</h2>
+      <p id="Text">
+        La técnica del trono del rey requiere que dos socorristas para cargar
+        una víctima consciente o semiconsciente. Lo que se logra uniendo las
+        muñecas para formar una silla o “trono” para que la víctima pueda
+        sentarse.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/KingsThrone.gif" />
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+      <h2 id="Title">ТЕХНИКА КОРОЛЕВСКОГО ТРОНА</h2>
+      <p id="Text">
+        Техника Королевского трона требует, чтобы двое спасателей несли
+        пострадавшего в сознании или полубессознательном состоянии. Это
+        достигается путем соединения запястий в виде стула или “трона”, чтобы
+        жертва могла сидеть.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/KingsThrone.gif" />
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+      <h2 id="Title">Fireman’s Carry Technique</h2>
+      <p id="Text">
+        The fireman’s carry enables a single rescuer to carry a casualty over a
+        longer period than many of the dragging techniques. The fireman’s carry
+        takes practice to achieve safety.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/FiremansCarry.gif" />
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+      <h2 id="Title">Technique de portage du pompier</h2>
+      <p id="Text">
+        Le portage du pompier permet à un seul sauveteur de transporter une
+        victime sur une période plus longue que la plupart des techniques de
+        traction. Cette technique de portage nécessite de la pratique pour être
+        faite en toute sécurité.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/FiremansCarry.gif" />
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+      <h2 id="Title">TÉCNICA DE LEVANTAMIENTO DEL BOMBERO</h2>
+      <p id="Text">
+        La técnica de levantamiento del bombero permite a un solo rescatista
+        llevar una víctima durante un período más largo que muchas de las
+        técnicas de arrastre. Esta técnica necesita práctica para realizarla con
+        seguridad.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/FiremansCarry.gif" />
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+      <h2 id="Title">ТЕХНИКА ПОДЪЕМА ПОЖАРНЫМ</h2>
+      <p id="Text">
+        Техника подъема пожарным позволяет одному спасателю нести пострадавшего
+        дольше, чем многие методы перетаскивания. Для безопасного выполнения
+        этой техники требуется практика.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/FiremansCarry.gif" />
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+      <h2 id="Title">Hasty Harness</h2>
+      <p id="Text">
+        The Hasty Harness is an emergency technique that uses a 6.5m (22ft) loop
+        of 1-inch tubular nylon webbing to form a rapid harness carry system for
+        an unconscious casualty. It is achieved by placing the loop around the
+        casualty’s body and then looping up inside the legs and through the
+        chest pieces as shown in the picture. The Hasty Harness can be used by
+        one or two rescuers’ and can be used to support winching or extrication
+        by aircraft.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/HastyHarness.gif" />
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+      <h2 id="Title">Harnais de secours</h2>
+      <p id="Text">
+        Le harnais de secours est une technique d’urgence qui utilise une boucle
+        de 6,5 m (22 pi) de sangle tubulaire en nylon de 1 pouce pour former un
+        système de harnais de transport rapide pour une victime inconsciente. On
+        y parvient en plaçant la boucle autour du corps de la victime, en la
+        passant ensuite entre les jambes, puis en remontant par la poitrine et
+        en y passant la boucle comme le montre l'image. Le harnais de secours
+        peut être utilisé par un ou deux sauveteurs et en appui du treuillage ou
+        du dégagement par avion.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/HastyHarness.gif" />
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+      <h2 id="Title">TÉCNICA DE ARNÉS RÁPIDO</h2>
+      <p id="Text">
+        El arnés rápido es una técnica de emergencia que utiliza una cuerda de
+        6,5 m (22 pies) de correas tubulares de Nylon de 1 pulgada para formar
+        un rápido sistema de acarreo por arnés para una víctima inconsciente. Se
+        logra mediante la colocación de la cuerda alrededor del cuerpo de la
+        víctima, luego pasándola por las piernas a través de las piezas en el
+        pecho como se muestra en la imagen. El arnés rápido puede ser utilizado
+        por uno o dos rescatistas y puede ser usado para enroscar o para
+        extracción con aeronaves.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/HastyHarness.gif" />
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+      <h2 id="Title">ТЕХНИКА БЫСТРОЙ ОБВЯЗКИ</h2>
+      <p id="Text">
+        Быстрая привязь - это аварийный метод, при котором используется веревка
+        длиной 6,5 м (22 фута) из 1-дюймовой трубчатой нейлоновой ленты для
+        формирования системы быстрой переноски пострадавшего, находящегося без
+        сознания. Это достигается путем обматывания веревки вокруг тела жертвы,
+        затем пропускания ее по ногам через части грудной клетки, как показано
+        на рисунке. Быстросъемный ремень безопасности может использоваться одним
+        или двумя спасателями и может использоваться для сцепления или
+        высвобождения с самолета.
+      </p>
+      <img id="Image" src="./assets/imgs/movement/HastyHarness.gif" />
+    </ion-card> </ion-content
+></ion-content>

@@ -1,0 +1,594 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content no-padding>
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Storage of the tourniquet</h2>
+        <p id="Text">The can be found in your Individual First Aid Kit (IFAK). The tourniquet should be carried on your
+            person in a location and manner that allows for rapid access and application by either the left or right
+            hand, ideally, in less than 30 seconds.</p>
+        <img id="Image" src="./assets/imgs/massive/TourniquetonChestRig.png">
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Rangement du garrot tourniquet</h2>
+        <p id="Text">Le Tourniquet "Combat Application Tourniquet (CAT)" se trouve dans votre Trousse de Premiers Soins
+            Individuelle (TPSI). Le garrot doit être porté sur votre personne à un endroit et d'une manière qui permet
+            un accès et une application rapides de la main gauche ou droite, idéalement en moins de 30 secondes.</p>
+        <img id="Image" src="./assets/imgs/massive/TourniquetonChestRig.png">
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">ALMACENAMIENTO DEL TORNIQUETE</h2>
+        <p id="Text">
+            Puede encontrarlo en su botiquín individual de primeros auxilios (IFAK, por sus siglas en inglés). El
+            torniquete debe llevarse cerca de la mano izquierda o derecha, de manera que permita un rápido acceso y
+            colocación, idealmente en menos de 30 segundos.
+        </p>
+        <img id="Image" src="./assets/imgs/massive/TourniquetonChestRig.png">
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ХРАНЕНИЕ ЖГУТА</h2>
+        <p id="Text">Вы можете найти его в вашей индивидуальной аптечке первой помощи (АИ). Жгут следует носить близко к
+            левой или правой руке, чтобы обеспечить быстрый доступ и наложение, в идеале менее чем за 30 секунд.</p>
+        <img id="Image" src="./assets/imgs/massive/TourniquetonChestRig.png">
+    </ion-card>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Applying the tourniquet</h2>
+        <p id="Text">The Tourniquet should be applied directly to the skin approximately 5cm (2-3inches) above the open
+            wound. In circumstances where the first-aider has no time to expose and search for wounds, the tourniquet
+            may be applied directly over clothing in the ‘high and tight’ position, as high on the limb and close to the
+            torso as possible, provided there are no solid objects inside the clothing.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Application du garrot tourniquet</h2>
+        <p id="Text">Le garrot tourniquet doit être appliqué directement sur la peau à environ 5 cm (2-3 pouces)
+            au-dessus de la plaie ouverte. Dans les cas où le secouriste n'a pas le temps d'exposer et de chercher des
+            plaies, le garrot peut être appliqué directement sur le vêtement en position « haute et serrée », aussi haut
+            que possible sur le membre et aussi près du torse que possible, à condition qu'il n'y ait aucun objet solide
+            dans les vêtements.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">COLOCACIÓN DEL TORNIQUETE</h2>
+        <p id="Text">
+            El torniquete debe colocarse directamente sobre la piel aproximadamente a 5 cm (2 o 3 pulgadas) por encima
+            de la herida. En circunstancias en las que el socorrista no tenga tiempo para exponer y buscar heridas, el
+            torniquete puede colocarse directamente sobre la ropa en la posición más alta y ajustada, tan alto en la
+            extremidad y cerca del torso como sea posible, siempre que no haya objetos sólidos dentro de la ropa.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">НАЛОЖЕНИЕ ЖГУТА</h2>
+        <p id="Text">Жгут следует наложить непосредственно на кожу примерно на 5 см (2-3 дюйма) выше открытой раны. В
+            обстоятельствах, когда у спасателя НЕТ времени обнажать раны и осматривать их, жгут можно наложить прямо
+            поверх одежды в самом высоком, туго натянутом положении, как можно выше на конечности и ближе к туловищу,
+            при условии, что под одеждой НЕТ твердых предметов.</p>
+    </ion-card>
+
+    <ion-slides pager='true' *ngIf="ENG === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">One-handed application</h2>
+                <h2 id="SubTitle">Step 1</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep1.gif">
+                <p id="Text">Insert the injured limb through the loop and position it 2-3 inch above the bleeding site
+                    to the skin or in ‘high and tight’ position over clothing</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">One-handed application</h2>
+                <h2 id="SubTitle">Step 2</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep2.gif">
+                <p id="Text">Pull band tightly and fasten it back on itself all the way around the limb, but not over
+                    the rod clips.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">One-handed application</h2>
+                <h2 id="SubTitle">Step 3</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep3.gif">
+                <p id="Text">Twist the rod until bleeding has stopped</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">One-handed application</h2>
+                <h2 id="SubTitle">Step 4</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep4.gif">
+                <p id="Text">Secure the rod inside the clip to lock it in place.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">One-handed application</h2>
+                <h2 id="SubTitle">Step 5</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep5.gif">
+                <p id="Text">Route the band between the clips and over the rod. Secure rod and band with TIME strap.
+                    Record time of application.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="FR === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application d’une seule main</h2>
+                <h2 id="SubTitle">Étape 1</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep1.gif">
+                <p id="Text">Insérez le membre blessé dans la boucle et placez-la à 2-3 pouces au-dessus du saignement
+                    ou en position « haute et serrée » sur les vêtements.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application d’une seule main</h2>
+                <h2 id="SubTitle">Étape 2</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep2.gif">
+                <p id="Text">Tirez fermement la bande et fixez-la sur elle-même tout autour du membre, mais pas sur les
+                    clips de la tige.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application d’une seule main</h2>
+                <h2 id="SubTitle">Étape 3</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep3.gif">
+                <p id="Text">Tournez la tige jusqu'à ce que le saignement s'arrête.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application d’une seule main</h2>
+                <h2 id="SubTitle">Étape 4</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep4.gif">
+                <p id="Text">Fixez la tige à l'intérieur du clip pour la verrouiller en place.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application d’une seule main</h2>
+                <h2 id="SubTitle">Étape 5</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep5.gif">
+                <p id="Text">Placez la bande entre les clips et sur la tige. Fixez la tige et la bande avec la sangle
+                    TIME. Enregistrez l’heure de la pose.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="ES === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON UNA MANO</h2>
+                <h2 id="SubTitle">PASO 1: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep1.gif">
+                <p id="Text">
+                    Inserte la extremidad lesionada a través del lazo y colóquela de 2 a 3 pulgadas por encima del área
+                    de la hemorragia sobre la piel o en una posición “alta y apretada” sobre la ropa.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON UNA MANO</h2>
+                <h2 id="SubTitle">PASO 2: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep2.gif">
+                <p id="Text">
+                    Tire de la banda con fuerza y ajústela sobre sí misma en todo el contorno de la extremidad, pero no
+                    sobre los clips de la barra.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON UNA MANO</h2>
+                <h2 id="SubTitle">PASO 3: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep3.gif">
+                <p id="Text">Gire la barra hasta que deje de sangrar. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON UNA MANO</h2>
+                <h2 id="SubTitle">PASO 4:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep4.gif">
+                <p id="Text">Asegure la barra dentro del clip.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON UNA MANO</h2>
+                <h2 id="SubTitle">PASO 5:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep5.gif">
+                <p id="Text">
+                    Pase la banda entre los clips y sobre la barra. Asegure la barra y la banda con la correa para
+                    marcar el tiempo. Registre el tiempo de la colocación.
+                </p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="RUS === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ОДНОЙ РУКОЙ</h2>
+                <h2 id="SubTitle">ШАГ 1:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep1.gif">
+                <p id="Text">Проденьте поврежденную конечность в петлю и расположите ее на 2-3 дюйма выше места
+                    кровотечения на коже или в положении “высоко и туго” на одежде.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ОДНОЙ РУКОЙ</h2>
+                <h2 id="SubTitle">ШАГ 2:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep2.gif">
+                <p id="Text">Туго натяните ленту и затяните ее вокруг конечности по всей длине, но не поверх зажимов на
+                    перекладине.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ОДНОЙ РУКОЙ</h2>
+                <h2 id="SubTitle">ШАГ 3:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep3.gif">
+                <p id="Text">Вращайте перекладину, пока не прекратится кровотечение.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ОДНОЙ РУКОЙ</h2>
+                <h2 id="SubTitle">ШАГ 4:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep4.gif">
+                <p id="Text">Закрепите перекладину внутри зажима.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ОДНОЙ РУКОЙ</h2>
+                <h2 id="SubTitle">ШАГ 5:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetSingleStep5.gif">
+                <p id="Text">Проденьте ленту между зажимами и перекиньте через планку. Закрепите планку и ленту
+                    ремешком, чтобы сохранить время. Запишите время наложения.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+    <ion-slides pager='true' *ngIf="ENG === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Two-handed application</h2>
+                <h2 id="SubTitle">Step 1</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep1.gif">
+                <p id="Text">Route the band around the limb and position it above the bleeding site directly on the skin
+                    or in ‘high and tight’ position over clothing</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Two-handed application</h2>
+                <h2 id="SubTitle">Step 2</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep2.gif">
+                <p id="Text">Pull band tightly and fasten it back on itself all the way around the limb, but not over
+                    the rod clips.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Two-handed application</h2>
+                <h2 id="SubTitle">Step 3</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep3.gif">
+                <p id="Text">Twist the rod until bleeding has stopped</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Two-handed application</h2>
+                <h2 id="SubTitle">Step 4</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep4.gif">
+                <p id="Text">Secure the rod inside the clip to lock it in place.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Two-handed application</h2>
+                <h2 id="SubTitle">Step 5</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep5.gif">
+                <p id="Text">Route the band between the clips and over the rod. Secure rod and band with TIME strap.
+                    Record time of application.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="FR === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application à deux mains</h2>
+                <h2 id="SubTitle">Étape 1</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep1.gif">
+                <p id="Text">Placez la bande autour du membre et placez-la au-dessus du saignement directement sur la
+                    peau ou en position « haute et serrée » par-dessus les vêtements.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application à deux mains</h2>
+                <h2 id="SubTitle">Étape 2</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep2.gif">
+                <p id="Text">Tirez fermement la bande et fixez-la sur elle-même tout autour du membre, mais pas sur les
+                    clips de la tige.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application à deux mains</h2>
+                <h2 id="SubTitle">Étape 3</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep3.gif">
+                <p id="Text">Tournez la tige jusqu'à ce que l'hémorragie s'arrête.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application à deux mains</h2>
+                <h2 id="SubTitle">Étape 4</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep4.gif">
+                <p id="Text">Fixez la tige à l'intérieur du clip pour la verrouiller en place.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Application à deux mains</h2>
+                <h2 id="SubTitle">Étape 5</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep5.gif">
+                <p id="Text">Placez la bande entre les clips et sur la tige. Fixez la tige et la bande avec la sangle
+                    TIME. Enregistrez l’heure de la pose.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="ES === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON DOS MANOS</h2>
+                <h2 id="SubTitle">PASO 1: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep1.gif">
+                <p id="Text">Pase la banda alrededor de la extremidad y colóquela sobre el sitio de sangrado
+                    directamente sobre la piel o en una posición “alta y ajustada” sobre la ropa. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON DOS MANOS</h2>
+                <h2 id="SubTitle">PASO 2: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep2.gif">
+                <p id="Text">Tire de la banda con fuerza y ajustela sobre sí misma alrededor de la extremidad, pero no
+                    sobre los clips de la barra. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON DOS MANOS</h2>
+                <h2 id="SubTitle">PASO 3: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep3.gif">
+                <p id="Text">Gire la barra hasta que deje de sangrar. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON DOS MANOS</h2>
+                <h2 id="SubTitle">PASO 4: </h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep4.gif">
+                <p id="Text">Asegure la barra dentro del clip. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">COLOCACIÓN CON DOS MANOS</h2>
+                <h2 id="SubTitle">Step 5</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep5.gif">
+                <p id="Text">Pase la banda entre los clips y sobre la barra. Asegure la barra y la banda con la correa
+                    para marcar la hora. Registre el tiempo de la colocación.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="RUS === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ДВУМЯ РУКАМИ</h2>
+                <h2 id="SubTitle">ШАГ 1:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep1.gif">
+                <p id="Text">Обмотайте повязку вокруг конечности и наложите ее на кровоточащее место непосредственно на
+                    кожу или в положении “высоко и туго” поверх одежды.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ДВУМЯ РУКАМИ</h2>
+                <h2 id="SubTitle">ШАГ 2:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep2.gif">
+                <p id="Text">Туго натяните ленту и затяните ее вокруг конечности, но не поверх зажимов на перекладине.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ДВУМЯ РУКАМИ</h2>
+                <h2 id="SubTitle">ШАГ 3:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep3.gif">
+                <p id="Text">Вращайте перекладину, пока кровотечение не прекратится.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ДВУМЯ РУКАМИ</h2>
+                <h2 id="SubTitle">ШАГ 4:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep4.gif">
+                <p id="Text">Закрепите перекладину внутри зажима.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">НАЛОЖЕНИЕ ДВУМЯ РУКАМИ</h2>
+                <h2 id="SubTitle">ШАГ 5:</h2>
+                <img id="Image" src="./assets/imgs/massive/TourniquetBuddyStep5.gif">
+                <p id="Text">Проденьте ленту между зажимами и перекиньте через планку. Закрепите планку и ленту
+                    ремешком, чтобы отметить время. Запишите время наложения.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Improvised windlass device</h2>
+        <p id="Text">If you do not have access to a tourniquet or your tourniquet is being used it is possible to create
+            an improvised tourniquet. To make an improvised tourniquet you will need:<br><br>A material/band of some
+            sort to wrap around the extremity such as a cravat/triangle bandage or piece of clothing/cloth;<br><br>A
+            windlass – a rigid object to twist the band such as a stick, jack handle, broom handle, pocket knife (closed
+            blade), or carabineer.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Dispositif de treuil improvisé</h2>
+        <p id="Text">Si vous n'avez pas de garrot tourniquet ou si votre garrot est utilisé, il est possible de créer un
+            garrot improvisé. <br><br>Pour faire un garrot tourniquet improvisé vous aurez besoin d’un tissu ou d’une
+            bande à enrouler autour de l'extrémité du membre, comme une cravate, un bandage triangulaire ou un morceau
+            de vêtement/textile;
+            <br>Un guindeau - un objet rigide pour tordre la bande comme un bâton, un manche de cric, un manche à balai,
+            un couteau de poche (lame fermée), un mousqueton.
+        </p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">TORNIQUETE IMPROVISADO</h2>
+        <p id="Text">Si no tiene acceso a un torniquete o si está siendo usado, se puede hacer uno improvisado. Para
+            hacer un torniquete improvisado necesitará:
+            Material: banda de algún tipo para envolver la extremidad, como una corbata/vendaje triangular o una pieza
+            de ropa/tela;
+            Un torniquete: un objeto rígido para torcer la banda, como un palo, mango de gato hidráulico, mango de
+            escoba, navaja de bolsillo (hoja cerrada) o mosquetón.</p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">САМОДЕЛЬНЫЙ ЖГУТ</h2>
+        <p id="Text">Если у вас НЕТ доступа к жгуту или если он используется, можно изготовить самодельный жгут. Для
+            изготовления самодельного жгута вам понадобится:
+            Материал / лента какого-либо типа для обертывания конечности, например треугольный галстук / бинт или кусок
+            одежды / ткани;
+            Лебедка - жесткий предмет для скручивания ленты, такой как палка, ручка домкрата, ручка метлы, карманный нож
+            (с закрытым лезвием) или карабин.</p>
+    </ion-card>
+    <ion-slides pager='true' *ngIf="ENG === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Improvised windlass device</h2>
+                <h2 id="SubTitle">Step 1</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep1.gif">
+                <p id="Text">Use your selected material/ band to wrap the extremity tightly then secure the material
+                    with a knot.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Improvised windlass device</h2>
+                <h2 id="SubTitle">Step 2</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep2.gif">
+                <p id="Text">Place the chosen windlass object underneath the knot and twist the windlass object until
+                    the bleeding has stopped.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Improvised windlass device</h2>
+                <h2 id="SubTitle">Step 3</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep3.gif">
+                <p id="Text">Use the material to tie a final knot on top on the twisted windlass in order to properly
+                    secure the tourniquet.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="FR === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Utilisation d’un garrot improvisé</h2>
+                <h2 id="SubTitle">Étape 1</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep1.gif">
+                <p id="Text">Utilisez le matériel/la sangle que vous avez choisi pour envelopper étroitement
+                    l’extrémité, puis fixez-le à l'aide d'un nœud.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">FUtilisation d’un garrot improvisé</h2>
+                <h2 id="SubTitle">Étape 2</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep2.gif">
+                <p id="Text">Placez un bâtonnet improvisé sous le nœud et faites-le tourner jusqu’à ce que l’hémorragie
+                    s’arrête.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Utilisation d’un garrot improvisé</h2>
+                <h2 id="SubTitle">Étape 3</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep3.gif">
+                <p id="Text">Utilisez le matériel pour faire un dernier nœud au-dessus du bâtonnet afin de bien le
+                    fixer.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="ES === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">TORNIQUETE IMPROVISADO</h2>
+                <h2 id="SubTitle">PASO 1: </h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep1.gif">
+                <p id="Text">Use el material o banda seleccionado para envolver la extremidad firmemente y luego asegure
+                    el material con un nudo. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">TORNIQUETE IMPROVISADOe</h2>
+                <h2 id="SubTitle">PASO 2: </h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep2.gif">
+                <p id="Text">Coloque el objeto seleccionado como torniquete debajo del nudo y gire el objeto hasta que
+                    pare el sangrado.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">TORNIQUETE IMPROVISADO</h2>
+                <h2 id="SubTitle">PASO 3: </h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep3.gif">
+                <p id="Text">Utilice el material para hacer un nudo final en la parte superior del molinete retorcido
+                    para asegurar correctamente el torniquete.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+
+    <ion-slides pager='true' *ngIf="RUS === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ИМПРОВИЗИРОВАННЫЙ ЖГУТ</h2>
+                <h2 id="SubTitle">ШАГ 1:</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep1.gif">
+                <p id="Text">Используйте выбранный материал / ленту, чтобы плотно обернуть конечность, а затем закрепите
+                    материал узлом.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ИМПРОВИЗИРОВАННЫЙ ЖГУТ</h2>
+                <h2 id="SubTitle">ШАГ 2:</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep2.gif">
+                <p id="Text">Поместите предмет, выбранный в качестве жгута, под узел и закрутите предмет, чтобы
+                    остановить кровотечение.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ИМПРОВИЗИРОВАННЫЙ ЖГУТ</h2>
+                <h2 id="SubTitle">ШАГ 3:</h2>
+                <img id="Image" src="./assets/imgs/massive/ImprovisedWindlassStep3.gif">
+                <p id="Text">Используйте этот материал, чтобы завязать последний узел в верхней части скрученной
+                    вертушки, чтобы должным образом закрепить жгут.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

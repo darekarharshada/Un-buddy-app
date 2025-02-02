@@ -1,0 +1,63 @@
+<ion-header no-border>
+  <ion-navbar color="transparent">
+    <ion-buttons right>
+      <button ion-button class="ion-icon" color="light" icon-only (click)="GotoSettings()">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-grid>
+    <ion-row id="logocontainer" justify-content-center align-items-center>
+      <img id="logo" src="./assets/imgs/logo.svg" alt="logo">
+    </ion-row>
+    <ion-row id="rangenbuttons">
+      <ion-col>
+        <ion-buttons *ngIf="ENG === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenProtocol()">
+            protocol
+          </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="ES === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenProtocol()">
+            PROTOCOLO
+          </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="FR === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenProtocol()">
+            protocole
+          </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="RUS === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenProtocol()">
+            протокол
+          </button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col>
+        <ion-buttons *ngIf="ENG === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenTraining()">
+            training
+          </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="ES === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenTraining()">
+            ENTRENAMIENTO
+          </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="FR === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenTraining()">
+            formation
+          </button>
+        </ion-buttons>
+        <ion-buttons *ngIf="RUS === true">
+          <button class="buttons" clear ion-button color="light" icon-only (click)="OpenTraining()">
+            обучение
+          </button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

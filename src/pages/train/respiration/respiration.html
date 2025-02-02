@@ -1,0 +1,300 @@
+<ion-header no-border>
+  <ion-navbar hideBackButton color="transparent">
+    <ion-buttons left>
+      <button
+        ion-button
+        class="ion-icon"
+        color="light"
+        icon-only
+        (click)="GoBack()"
+      >
+        <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Chest wounds</h2>
+    <p id="Text">
+      Any injury on the front or back of the casualty’s torso above the navel
+      should be treated as a chest injury.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">РАНЕНИЯ В ГРУДЬ</h2>
+    <p id="Text">
+      Любое повреждение передней или задней части туловища жертвы выше пупка
+      следует рассматривать как травму грудной клетки.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Blessures à la poitrine</h2>
+    <p id="Text">
+      Toute blessure à l’avant ou à l’arrière du torse de la victime au-dessus
+      du nombril doit être traitée comme une blessure à la poitrine.
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">HERIDAS DE PECHO</h2>
+    <p id="Text">
+      Cualquier lesión en la parte delantera o trasera del torso de la víctima
+      por encima del ombligo debe tratarse como una lesión en el pecho.
+    </p>
+  </ion-card>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">Chest seal</h2>
+    <p id="Text">
+      Sucking chest wounds should be sealed with an air tight dressing.<br /><br />If
+      there is more than one wound, such as an entrance and exit wound, apply
+      the chest seal or 3-sided flutter valve to the wound on the casualty's
+      front and a full seal to the wound on the casualty's back (all four sides
+      taped down).
+    </p>
+  </ion-card>
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">ПРИКРОЙТЕ ГРУДНУЮ КЛЕТКУ.</h2>
+    <p id="Text">
+      Всасывающие раны на груди следует закрыть герметичной повязкой. Если
+      имеется более одной раны, например входной или выходной, наложите
+      герметичную повязку или 3-сторонний откидной клапан на рану спереди
+      пострадавшего и полностью заклейте рану на спине пострадавшего. (все
+      четыре стороны скреплены скотчем).
+    </p>
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Pansement thoracique occlusif</h2>
+    <p id="Text">
+      Les plaies thoraciques soufflantes doivent être scellées avec un pansement
+      hermétique. S’il y a plus d’une plaie, comme une plaie d’entrée et une
+      plaie de sortie, appliquez un pansement thoracique occlusif ou une valve
+      anti-reflux à 3 côtés sur la plaie sur l’avant de la victime et un
+      pansement occlusif sur la plaie au dos de la victime (les quatre côtés
+      sont scotchés).
+    </p>
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">CUBRIR EL PECHO</h2>
+    <p id="Text">
+      Las heridas por succión en el pecho deben cubrirse con un vendaje
+      hermético. Si hay más de una herida, tales como una entrada o salida,
+      aplicar el vendaje hermético o la válvula de aleteo de 3 lados en la
+      herida, de la parte frontal de la víctima y un sello completo a la herida
+      en la espalda de la víctima (los cuatro lados pegados con cinta adhesiva).
+    </p>
+  </ion-card>
+
+  <ion-slides pager="true" *ngIf="ENG === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Applying chest seal</h2>
+        <h2 id="SubTitle">Step 1</h2>
+        <img id="Image" src="assets/imgs/respiration/ChestsealStep1.gif" />
+        <p id="Text">
+          Prior to fetching a chest seal place gloved hand over the wound or
+          apply sideways pressure to the wound to shift the muscle tissue,
+          closing the wound.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Applying chest seal</h2>
+        <h2 id="SubTitle">Step 2</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep2.gif" />
+        <p id="Text">
+          Take gauze/cloth and wipe away any blood, sweat, debris from the wound
+          area. Place the chest seal next to the wound. Slowly remove the
+          plastic backing while rolling the sticky side over the wound. The seal
+          should be centered over the wound.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Applying chest seal</h2>
+        <h2 id="SubTitle">Step 3</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep3.gif" />
+        <p id="Text">
+          Verify that the seal is sticking and that no air is heard passing
+          through the seal during inhalation. For vented chest seals make sure
+          that the vent ports are not clogged up and are able to let excess air
+          vent from the chest cavity. Repeat as necessary for additional wounds,
+          ensure you seal any exit wounds.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="RUS === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАЛОЖИТЕ ПЛАСТЫРЬ НА ГРУДЬ</h2>
+        <h2 id="SubTitle">ШАГ 1</h2>
+        <img id="Image" src="assets/imgs/respiration/ChestsealStep1.gif" />
+        <p id="Text">Перед использованием пластыря на грудь положите руку в перчатке на
+          рану или надавите сбоку на рану, чтобы сдвинуть мышечную ткань и
+          закрыть рану.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАЛОЖИТЕ ПЛАСТЫРЬ НА ГРУДЬ</h2>
+        <h2 id="SubTitle">ШАГ 2</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep2.gif" />
+        <p id="Text">Возьмите бинт / ткань и вытрите кровь, пот и мусор с области раны.
+          Наложите пластырь ровно на рану. Медленно снимите пластиковую
+          подложку, одновременно накладывая клейкую сторону на рану. Пластырь
+          должен располагаться по центру раны.
+        </p>
+
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">НАЛОЖИТЕ ПЛАСТЫРЬ НА ГРУДЬ</h2>
+        <h2 id="SubTitle">ШАГ 3</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep3.gif" />
+        <p id="Text">Убедитесь, что пластырь плотно прилегает и воздух не проходит через
+          уплотнитель во время вдоха. При использовании нагрудных прокладок с
+          вентиляцией убедитесь, что вентиляционные отверстия не закрыты и
+          позволяют избыточному воздуху выходить из грудной полости. При
+          необходимости повторите процедуру для дополнительных ран, обязательно
+          заклейте все раны.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager="true" *ngIf="FR === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application d’un pansement thoracique occlusif</h2>
+        <h2 id="SubTitle">Étape 1</h2>
+        <img id="Image" src="assets/imgs/respiration/ChestsealStep1.gif" />
+        <p id="Text">
+          Avant de poser un pansement pour plaie thoracique, placez la main
+          gantée sur la plaie ou appuyez sur les côtés de la plaie pour déplacer
+          le tissu musculaire et fermer la plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application d’un pansement thoracique occlusif</h2>
+        <h2 id="SubTitle">Étape 2</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep2.gif" />
+        <p id="Text">
+          Prenez de la gaze ou un tissu et essuyez le sang, la sueur et les
+          débris de la zone de la plaie. Placez le pansement occlusif à côté de
+          la plaie. Retirez lentement le dos en plastique tout en faisant rouler
+          le côté collant sur la plaie. Le pansement doit être centré sur la
+          plaie.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">Application d’un pansement thoracique occlusif</h2>
+        <h2 id="SubTitle">Étape 3</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep3.gif" />
+        <p id="Text">
+          Vérifiez que le pansement colle bien et qu’il n’y a pas d’air qui
+          passe à travers pendant l’inhalation. Pour les pansements thoraciques
+          ventilés, s’assurer que les orifices de ventilation ne sont pas
+          obstrués et qu’ils sont capables de laisser l’excès d’air s’échapper
+          de la cavité thoracique. Répétez l’opération si nécessaire pour
+          d’autres plaies, assurez-vous de sceller toutes les plaies de sortie.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" *ngIf="ES === true">
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICAR PARCHE DE PECHO</h2>
+        <h2 id="SubTitle">PASO 1:</h2>
+        <img id="Image" src="assets/imgs/respiration/ChestsealStep1.gif" />
+        <p id="Text">
+          Antes de utilizar un parche de pecho, coloque la mano enguantada sobre
+          la herida o aplique presión lateral a la herida para mover el tejido
+          muscular cerrando la herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICAR PARCHE DE PECHO</h2>
+        <h2 id="SubTitle">PASO 2:</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep2.gif" />
+        <p id="Text">
+          Tome una gasa o paño y limpie la sangre, el sudor y los residuos del
+          área de la herida. Coloque el parche de forma uniforme con la herida.
+          Remueva despacio el respaldo de plástico mientras enrolla el lado
+          adhesivo sobre la herida. El parche debe quedar centrado sobre la
+          herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardSteps">
+        <h2 id="Title">APLICAR PARCHE DE PECHO</h2>
+        <h2 id="SubTitle">PASO 3:</h2>
+        <img id="Image" src="./assets/imgs/respiration/ChestsealStep3.gif" />
+        <p id="Text">
+          Verifique que el parche quede adherido y que no se escuche paso de
+          aire a través del sello durante la inhalación. Para los parches de
+          pecho ventilados, asegúrese que los puertos de ventilación no estén
+          obstruidos y que sean capaces de permitir que el exceso de aire salga
+          de la cavidad torácica. Repita según sea necesario para heridas
+          adicionales, asegúrese de sellar cualquier herida.
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card *ngIf="ENG === true">
+    <h2 id="Title">4-Sided Occlusive Dressing</h2>
+    <p id="Text">
+      If commercial chest seals are not available, any air tight material like
+      plastic can be used to seal the chest including plastic wrapping from
+      other dressings, duct tape or plastic kitchen roll. The important
+      objective is to seal the wounds in a way that prevents air from entering
+      the chest.
+    </p>
+    <img id="Image" src="./assets/imgs/respiration/FlutterValve.png" />
+  </ion-card>
+
+  <ion-card *ngIf="RUS === true">
+    <h2 id="Title">4-СТОРОННЯЯ ОККЛЮЗИОННАЯ ПОВЯЗКА</h2>
+    <p id="Text">Если коммерческие пластыри недоступны, для герметизации грудной клетки можно использовать любой воздухонепроницаемый материал, например целофановый пакет, включая пластиковую пленку от других бинтов, скотч или пищевую пленку. Основная цель - заклеить раны, чтобы предотвратить попадание воздуха в грудную клетку.
+    </p>
+    <img id="Image" src="./assets/imgs/respiration/FlutterValve.png" />
+  </ion-card>
+  <ion-card *ngIf="FR === true">
+    <h2 id="Title">Pansement occlusif à 4 côtés</h2>
+    <p id="Text">
+      S’il n’y a pas de pansement thoracique occlusif, tout matériau étanche à
+      l’air comme du plastique peut être utilisé pour sceller la poitrine, y
+      compris un emballage en plastique, d’autres pansements, du ruban adhésif
+      en toile ou un rouleau de film plastique. L’objectif important est de
+      sceller les plaies d’une manière qui empêche l’air de pénétrer dans la
+      poitrine.
+    </p>
+    <img id="Image" src="./assets/imgs/respiration/FlutterValve.png" />
+  </ion-card>
+  <ion-card *ngIf="ES === true">
+    <h2 id="Title">VENDAJE OCLUSIVO DE 4 LADOS</h2>
+    <p id="Text">
+      Si los parches comerciales no están disponibles, cualquier material
+      hermético como el plástico puede ser usado para sellar el pecho incluyendo
+      envoltura de plástico de otros vendajes, cinta adhesiva o rollo plástico
+      para cocina. El objetivo principal es sellar las heridas de forma que
+      evitemos que el aire entre en el pecho.
+    </p>
+    <img id="Image" src="./assets/imgs/respiration/FlutterValve.png" />
+  </ion-card>
+</ion-content>

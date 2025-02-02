@@ -1,0 +1,196 @@
+<ion-header no-border>
+  <ion-navbar color="transparent">
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce padding>
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoBasics()">
+      Basics
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoBasics()">
+      Notions élémentaires
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoBasics()">
+      Lo esencial
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoBasics()">
+      ОСНОВНОЕ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoScene()">
+      S.C.E.N.E assessment
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoScene()">
+      L'évaluation S.C.E.N.E
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoScene()">
+      Evaluación S.C.E.N.E.
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoScene()">
+      ОЦЕНКА СОСТОЯНИЯ Б.П.А.К.Р.
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAlert()">
+      Alert message
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAlert()">
+      message d'alerte
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAlert()">
+      Mensaje de alerta
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAlert()">
+      ПРЕДУПРЕЖДАЮЩЕЕ СООБЩЕНИЕ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMassive()">
+      Massive bleeding
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMassive()">
+      hemorragie massive
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMassive()">
+      Sangrado masivo
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMassive()">
+      МАССИВНОЕ КРОВОТЕЧЕНИЕ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAirway()">
+      Airway
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAirway()">
+      voies respiratoires
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAirway()">
+      VÍA RESPIRATORIA
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoAirway()">
+      ДЫХАТЕЛЬНЫЕ ПУТИ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRespiration()">
+      Respiration
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRespiration()">
+      Respiration
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRespiration()">
+      Respiración
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoRespiration()">
+      ДЫХАНИЕ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoCirculation()">
+      Circulation
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoCirculation()">
+      Circulation
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoCirculation()">
+      CIRCULACIÓN
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoCirculation()">
+      КРОВООБРАЩЕНИЕ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeat()">
+      Heat disorders
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeat()">
+      Troubles de la chaleur
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeat()">
+      TRASTORNOS PRODUCIDOS POR EL CALOR
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoHeat()">
+      ТЕПЛОВЫЕ НАРУШЕНИЯ
+    </button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="ENG === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMovement()">
+      Emergency movement
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="FR === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMovement()">
+      déplacement
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="ES === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMovement()">
+      MOVIMIENTOS DE EMERGENCIA
+    </button>
+  </ion-buttons>
+  <ion-buttons *ngIf="RUS === true">
+    <button outline class="buttons" clear full ion-button color="light" icon-only (click)="GotoMovement()">
+      ЭКСТРЕННЫЕ ДВИЖЕНИЯ
+    </button>
+  </ion-buttons>
+
+</ion-content>

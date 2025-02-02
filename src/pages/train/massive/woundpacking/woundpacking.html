@@ -1,0 +1,158 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton color="transparent">
+        <ion-buttons left>
+            <button ion-button class="ion-icon" color="light" icon-only (click)="GoBack()">
+                <ion-icon id="closeicon" name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <ion-card *ngIf="ENG === true">
+        <h2 id="Title">Wound packing</h2>
+        <p id="Text">Not all wounds are amendable to tourniquet application, such as high limb. In these cases, severe
+            bleeding should be controlled by wound packing.</p>
+    </ion-card>
+    <ion-card *ngIf="FR === true">
+        <h2 id="Title">Emballage de la plaie</h2>
+        <p id="Text">Toutes les plaies ne sont pas amendables par l'application d'un garrot, p.ex. sur un membre
+            supérieur. Dans ces cas, les hémorragies graves doivent être contrôlées par l'emballage de la plaie.</p>
+    </ion-card>
+    <ion-card *ngIf="ES === true">
+        <h2 id="Title">APÓSITO DE HERIDAS</h2>
+        <p id="Text">No todas las heridas se pueden contener con la colocación de un torniquete, como las de las
+            extremidades altas. En estos casos, la hemorragia intensa debe controlarse mediante la colocación de un
+            apósito en herida.</p>
+    </ion-card>
+    <ion-card *ngIf="RUS === true">
+        <h2 id="Title">ПЕРЕВЯЗКА РАНЫ</h2>
+        <p id="Text">Не все раны можно локализовать наложением жгута, например, на верхних конечностях. В этих случаях
+            сильное кровотечение следует остановить наложением повязки на рану.</p>
+    </ion-card>
+
+    <ion-slides pager='true' *ngIf="ENG === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Wound packing</h2>
+                <h2 id="SubTitle">Step 1</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep1.gif">
+                <p id="Text">Start by forming a small ball of dressing material to begin the packing process.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Wound packing</h2>
+                <h2 id="SubTitle">Step 2</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep2.gif">
+                <p id="Text">This ball should be inserted directly into the wound as close as possible to the source of
+                    the bleeding. One finger should be kept on the gauze ball maintaining constant pressure, while the
+                    remainder of the gauze is fed into the wound.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Wound packing</h2>
+                <h2 id="SubTitle">Step 3</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep3.gif">
+                <p id="Text">Once the wound cavity is packed, the remaining gauze should be placed on top of the wound
+                    and direct pressure applied for as long as possible, it may take up to 30-minutes for a clot to
+                    form.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="FR === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Emballage de la plaie</h2>
+                <h2 id="SubTitle">Étape 1</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep1.gif">
+                <p id="Text">Commencez par former une petite boule de pansement pour commencer le processus d'emballage.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Emballage de la plaie</h2>
+                <h2 id="SubTitle">Étape 2</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep2.gif">
+                <p id="Text">Cette boule doit être insérée directement dans la plaie le plus près possible de la source
+                    du saignement. Un doigt doit être maintenu sur la boule de gaze en maintenant une pression
+                    constante, tandis que le reste de la gaze est introduit dans la plaie.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">Emballage de la plaie</h2>
+                <h2 id="SubTitle">Étape 3</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep3.gif">
+                <p id="Text">Une fois que la cavité de la plaie est remplie, la gaze restante doit être placée sur la
+                    plaie et une pression directe doit être appliquée le plus longtemps possible, cela peut prendre
+                    jusqu'à 30 minutes pour qu'un caillot se forme.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="ES === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">APÓSITO DE HERIDAS</h2>
+                <h2 id="SubTitle">PASO 3: </h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep1.gif">
+                <p id="Text">Comience formando una pequeña bola de material de vendaje para comenzar el cubrimiento.
+                </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">APÓSITO DE HERIDAS</h2>
+                <h2 id="SubTitle">PASO 2: </h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep2.gif">
+                <p id="Text">Esta bola debe insertarse directamente en la herida lo más cerca posible de la fuente de
+                    sangrado. Se debe mantener un dedo sobre la bola de gasa manteniendo una presión constante, mientras
+                    que el resto de la gasa se introduce en la herida. </p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">APÓSITO DE HERIDAS</h2>
+                <h2 id="SubTitle">PASO 3: </h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep3.gif">
+                <p id="Text">
+                    Cuando la cavidad de la herida está llena, se debe colocar la gasa restante sobre la herida y se
+                    debe aplicar presión directa durante el mayor tiempo posible, puede tomar hasta 30 minutos para que
+                    se forme un coágulo.
+                </p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <ion-slides pager='true' *ngIf="RUS === true">
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ПЕРЕВЯЗКА РАНЫ</h2>
+                <h2 id="SubTitle">ШАГ 1:</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep1.gif">
+                <p id="Text">Начните с формирования небольшого шарика из бинтового материала, чтобы начать процесс
+                    перевязки.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ПЕРЕВЯЗКА РАНЫ</h2>
+                <h2 id="SubTitle">ШАГ 2:</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep2.gif">
+                <p id="Text">Этот шарик следует ввести непосредственно в рану как можно ближе к источнику кровотечения.
+                    Один палец следует держать над марлевым шариком, поддерживая постоянное давление, в то время как
+                    остальная часть бинта вводится в рану.</p>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardSteps">
+                <h2 id="Title">ПЕРЕВЯЗКА РАНЫ</h2>
+                <h2 id="SubTitle">ШАГ 3:</h2>
+                <img id="Image" src="./assets/imgs/massive/WoundpackingStep3.gif">
+                <p id="Text">Когда полость раны заполнится, оставшийся бинт следует наложить на рану и оказывать прямое
+                    давление как можно дольше, для образования сгустка может потребоваться до 30 минут.</p>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
